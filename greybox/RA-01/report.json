@@ -1,0 +1,2494 @@
+{
+  "id": "RA-01",
+  "name": "鯨骨自由港",
+  "name_en": "Whalebone Freeport",
+  "version": "0.4",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "harbor-west-stair",
+      "type": "stairs",
+      "from": "hw-stair-foot",
+      "to": "hw-stair-top",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          205.0,
+          93.0,
+          3.0
+        ],
+        [
+          205.0,
+          95.0,
+          3.0
+        ],
+        [
+          205.0,
+          100.0,
+          3.0
+        ],
+        [
+          160.0,
+          102.0,
+          25.0
+        ],
+        [
+          160.0,
+          110.0,
+          25.0
+        ],
+        [
+          160.0,
+          115.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "climb",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 45.044,
+          "dz": 22.0,
+          "dist3d": 50.13,
+          "slope": 26.031,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 9.608,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 8.0,
+          "dz": 0.0,
+          "dist3d": 8.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "climb",
+          "time": 1.333,
+          "verdict": "✅",
+          "note": "平台",
+          "no_room": false
+        },
+        {
+          "index": 5,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 12.942,
+      "climb": {
+        "horizontal": 58.044,
+        "dz": 22.0,
+        "climb_dz_abs": 22.0,
+        "max_slope": 26.031,
+        "no_room": false,
+        "min_len_stairs": 31.419,
+        "min_len_ramp": 60.445
+      }
+    },
+    {
+      "id": "steps-1",
+      "type": "stairs",
+      "from": "steps-foot",
+      "to": "l1",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          340.0,
+          92.0,
+          3.0
+        ],
+        [
+          340.0,
+          95.0,
+          3.0
+        ],
+        [
+          340.0,
+          130.0,
+          25.0
+        ],
+        [
+          340.0,
+          137.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 35.0,
+          "dz": 22.0,
+          "dist3d": 41.34,
+          "slope": 32.152,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 7.924,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 7.0,
+          "dz": 0.0,
+          "dist3d": 7.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.167,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 9.59,
+      "climb": {
+        "horizontal": 35.0,
+        "dz": 22.0,
+        "climb_dz_abs": 22.0,
+        "max_slope": 32.152,
+        "no_room": false,
+        "min_len_stairs": 31.419,
+        "min_len_ramp": 60.445
+      }
+    },
+    {
+      "id": "market-to-l1",
+      "type": "walk",
+      "from": "market-east",
+      "to": "l1",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          318.0,
+          137.0,
+          25.0
+        ],
+        [
+          320.0,
+          137.0,
+          25.0
+        ],
+        [
+          340.0,
+          137.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 3.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "steps-2",
+      "type": "stairs",
+      "from": "l1",
+      "to": "l2-foot",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          340.0,
+          137.0,
+          25.0
+        ],
+        [
+          340.0,
+          145.0,
+          25.0
+        ],
+        [
+          340.0,
+          205.0,
+          65.0
+        ],
+        [
+          340.0,
+          207.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 8.0,
+          "dz": 0.0,
+          "dist3d": 8.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 1.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 60.0,
+          "dz": 40.0,
+          "dist3d": 72.111,
+          "slope": 33.69,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 13.821,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 15.488,
+      "climb": {
+        "horizontal": 60.0,
+        "dz": 40.0,
+        "climb_dz_abs": 40.0,
+        "max_slope": 33.69,
+        "no_room": false,
+        "min_len_stairs": 57.126,
+        "min_len_ramp": 109.899
+      }
+    },
+    {
+      "id": "l2-to-admiralty",
+      "type": "walk",
+      "from": "l2-west",
+      "to": "admiralty-east",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          322.0,
+          230.0,
+          65.0
+        ],
+        [
+          320.0,
+          230.0,
+          65.0
+        ],
+        [
+          318.0,
+          230.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 0.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "l2-to-warhall",
+      "type": "walk",
+      "from": "l2-east",
+      "to": "warhall-west",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          358.0,
+          230.0,
+          65.0
+        ],
+        [
+          360.0,
+          230.0,
+          65.0
+        ],
+        [
+          362.0,
+          230.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 0.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "steps-3",
+      "type": "stairs",
+      "from": "l2-top",
+      "to": "hall-foot",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          340.0,
+          253.0,
+          65.0
+        ],
+        [
+          340.0,
+          255.0,
+          65.0
+        ],
+        [
+          340.0,
+          310.0,
+          100.0
+        ],
+        [
+          340.0,
+          312.0,
+          100.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 55.0,
+          "dz": 35.0,
+          "dist3d": 65.192,
+          "slope": 32.471,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 12.495,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 13.162,
+      "climb": {
+        "horizontal": 55.0,
+        "dz": 35.0,
+        "climb_dz_abs": 35.0,
+        "max_slope": 32.471,
+        "no_room": false,
+        "min_len_stairs": 49.985,
+        "min_len_ramp": 96.162
+      }
+    },
+    {
+      "id": "forge-to-admiralty",
+      "type": "ramp",
+      "from": "forge-east",
+      "to": "admiralty-west",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          223.0,
+          230.0,
+          60.0
+        ],
+        [
+          225.0,
+          230.0,
+          60.0
+        ],
+        [
+          240.0,
+          230.0,
+          65.0
+        ],
+        [
+          243.0,
+          230.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 15.0,
+          "dz": 5.0,
+          "dist3d": 15.811,
+          "slope": 18.435,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 2.635,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 3.469,
+      "climb": {
+        "horizontal": 15.0,
+        "dz": 5.0,
+        "climb_dz_abs": 5.0,
+        "max_slope": 18.435,
+        "no_room": false,
+        "min_len_stairs": 7.141,
+        "min_len_ramp": 13.737
+      }
+    },
+    {
+      "id": "west-lift-lower",
+      "type": "lift",
+      "from": "market-lift",
+      "to": "west-lift-lower-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          90.0,
+          172.0,
+          25.0
+        ],
+        [
+          90.0,
+          172.0,
+          60.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 35.0,
+          "dist3d": 35.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 17.667,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 17.667,
+      "climb": null
+    },
+    {
+      "id": "west-lift-lower-gallery",
+      "type": "walk",
+      "from": "west-lift-lower-top",
+      "to": "forge-lift",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          90.0,
+          172.0,
+          60.0
+        ],
+        [
+          90.0,
+          190.0,
+          60.0
+        ],
+        [
+          90.0,
+          192.0,
+          60.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 18.0,
+          "dz": 0.0,
+          "dist3d": 18.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 3.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 3.333,
+      "climb": {
+        "horizontal": 18.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "west-lift-upper",
+      "type": "lift",
+      "from": "forge-lift-up",
+      "to": "west-lift-upper-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          90.0,
+          262.0,
+          60.0
+        ],
+        [
+          90.0,
+          262.0,
+          110.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 50.0,
+          "dist3d": 50.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 22.667,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 22.667,
+      "climb": null
+    },
+    {
+      "id": "west-lift-upper-gallery",
+      "type": "walk",
+      "from": "west-lift-upper-top",
+      "to": "stele-lift",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          90.0,
+          262.0,
+          110.0
+        ],
+        [
+          90.0,
+          310.0,
+          110.0
+        ],
+        [
+          90.0,
+          312.0,
+          110.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 48.0,
+          "dz": 0.0,
+          "dist3d": 48.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 8.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 8.333,
+      "climb": {
+        "horizontal": 48.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "east-lift-lower",
+      "type": "lift",
+      "from": "eh-lift",
+      "to": "east-lift-lower-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          485.0,
+          158.0,
+          4.0
+        ],
+        [
+          485.0,
+          158.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 61.0,
+          "dist3d": 61.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 26.333,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 26.333,
+      "climb": null
+    },
+    {
+      "id": "east-lift-lower-gallery",
+      "type": "walk",
+      "from": "east-lift-lower-top",
+      "to": "warhall-lift",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          485.0,
+          158.0,
+          65.0
+        ],
+        [
+          469.275,
+          195.0,
+          65.0
+        ],
+        [
+          468.0,
+          198.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 40.203,
+          "dz": 0.0,
+          "dist3d": 40.203,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 6.7,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 3.26,
+          "dz": 0.0,
+          "dist3d": 3.26,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.543,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 7.244,
+      "climb": {
+        "horizontal": 40.203,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "east-lift-upper",
+      "type": "lift",
+      "from": "warhall-lift-up",
+      "to": "east-lift-upper-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          440.0,
+          262.0,
+          65.0
+        ],
+        [
+          440.0,
+          262.0,
+          100.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 35.0,
+          "dist3d": 35.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 17.667,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 17.667,
+      "climb": null
+    },
+    {
+      "id": "east-lift-upper-gallery",
+      "type": "walk",
+      "from": "east-lift-upper-top",
+      "to": "hall-lift",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          440.0,
+          262.0,
+          100.0
+        ],
+        [
+          416.0,
+          310.0,
+          100.0
+        ],
+        [
+          415.0,
+          312.0,
+          100.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 53.666,
+          "dz": 0.0,
+          "dist3d": 53.666,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 8.944,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.236,
+          "dz": 0.0,
+          "dist3d": 2.236,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.373,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 9.317,
+      "climb": {
+        "horizontal": 53.666,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "east-switchback",
+      "type": "ramp",
+      "from": "eh-ramp-foot",
+      "to": "warhall-ramp-top",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          585.0,
+          158.0,
+          4.0
+        ],
+        [
+          565.0,
+          160.0,
+          4.0
+        ],
+        [
+          485.0,
+          168.0,
+          33.0
+        ],
+        [
+          485.0,
+          176.0,
+          33.0
+        ],
+        [
+          580.0,
+          190.0,
+          65.0
+        ],
+        [
+          580.0,
+          195.0,
+          65.0
+        ],
+        [
+          580.0,
+          198.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 20.1,
+          "dz": 0.0,
+          "dist3d": 20.1,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 3.35,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 80.399,
+          "dz": 29.0,
+          "dist3d": 85.469,
+          "slope": 19.834,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 14.245,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 8.0,
+          "dz": 0.0,
+          "dist3d": 8.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.333,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 96.026,
+          "dz": 32.0,
+          "dist3d": 101.218,
+          "slope": 18.43,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 16.87,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 5,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 6,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 37.131,
+      "climb": {
+        "horizontal": 189.425,
+        "dz": 61.0,
+        "climb_dz_abs": 61.0,
+        "max_slope": 19.834,
+        "no_room": false,
+        "min_len_stairs": 87.117,
+        "min_len_ramp": 167.596
+      }
+    },
+    {
+      "id": "hall-to-stele",
+      "type": "ramp",
+      "from": "hall-west",
+      "to": "stele-east",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          252.0,
+          345.0,
+          100.0
+        ],
+        [
+          250.0,
+          345.0,
+          100.0
+        ],
+        [
+          190.0,
+          345.0,
+          110.0
+        ],
+        [
+          188.0,
+          345.0,
+          110.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 60.0,
+          "dz": 10.0,
+          "dist3d": 60.828,
+          "slope": 9.462,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 10.138,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 10.805,
+      "climb": {
+        "horizontal": 60.0,
+        "dz": 10.0,
+        "climb_dz_abs": 10.0,
+        "max_slope": 9.462,
+        "no_room": false,
+        "min_len_stairs": 14.281,
+        "min_len_ramp": 27.475
+      }
+    },
+    {
+      "id": "harbor-to-eh",
+      "type": "ramp",
+      "from": "harbor-east",
+      "to": "eh-west",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          470.0,
+          70.0,
+          3.0
+        ],
+        [
+          475.0,
+          73.333,
+          3.0
+        ],
+        [
+          480.0,
+          76.667,
+          4.0
+        ],
+        [
+          485.0,
+          80.0,
+          4.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 6.009,
+          "dz": 0.0,
+          "dist3d": 6.009,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 1.002,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 6.009,
+          "dz": 1.0,
+          "dist3d": 6.092,
+          "slope": 9.448,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.015,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 6.009,
+          "dz": 0.0,
+          "dist3d": 6.009,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.002,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 3.018,
+      "climb": {
+        "horizontal": 6.009,
+        "dz": 1.0,
+        "climb_dz_abs": 1.0,
+        "max_slope": 9.448,
+        "no_room": false,
+        "min_len_stairs": 1.428,
+        "min_len_ramp": 2.747
+      }
+    },
+    {
+      "id": "tidal-passage",
+      "type": "walk",
+      "from": "cove-gate",
+      "to": "cove",
+      "width": 3.0,
+      "optional": false,
+      "points": [
+        [
+          145.0,
+          30.0,
+          3.0
+        ],
+        [
+          140.0,
+          30.294,
+          3.0
+        ],
+        [
+          100.0,
+          32.647,
+          2.0
+        ],
+        [
+          60.0,
+          35.0,
+          2.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.009,
+          "dz": 0.0,
+          "dist3d": 5.009,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.835,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 40.069,
+          "dz": -1.0,
+          "dist3d": 40.082,
+          "slope": 1.43,
+          "kind": "walk",
+          "region": "climb",
+          "time": 6.68,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 40.069,
+          "dz": 0.0,
+          "dist3d": 40.069,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 6.678,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 14.193,
+      "climb": {
+        "horizontal": 40.069,
+        "dz": 1.0,
+        "climb_dz_abs": 1.0,
+        "max_slope": 1.43,
+        "no_room": false,
+        "min_len_stairs": 1.428,
+        "min_len_ramp": 2.747
+      }
+    },
+    {
+      "id": "rope-bridge-axis",
+      "type": "bridge",
+      "from": "admiralty-north",
+      "to": "warhall-north",
+      "width": 2.0,
+      "optional": true,
+      "points": [
+        [
+          300.0,
+          262.0,
+          65.0
+        ],
+        [
+          320.0,
+          262.0,
+          65.0
+        ],
+        [
+          360.0,
+          262.0,
+          65.0
+        ],
+        [
+          380.0,
+          262.0,
+          65.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 40.0,
+          "dz": 0.0,
+          "dist3d": 40.0,
+          "slope": 0.0,
+          "kind": "bridge",
+          "region": "climb",
+          "time": 6.667,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 13.333,
+      "climb": {
+        "horizontal": 40.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 36.671,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "hw-stair-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "hw-stair-foot",
+              "to": "hw-stair-top",
+              "via": "樓梯 harbor-west-stair"
+            },
+            {
+              "from": "hw-stair-top",
+              "to": "auction",
+              "via": "街區步道 market"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 40.45,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "harbor-east",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "harbor-east",
+              "to": "eh-west",
+              "via": "坡道 harbor-to-eh"
+            },
+            {
+              "from": "eh-west",
+              "to": "bank",
+              "via": "街區步道 east-haven"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 59.707,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-west",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-west",
+              "to": "admiralty-east",
+              "via": "步道 l2-to-admiralty"
+            },
+            {
+              "from": "admiralty-east",
+              "to": "admiralty-west",
+              "via": "街區步道 admiralty"
+            },
+            {
+              "from": "admiralty-west",
+              "to": "forge-east",
+              "via": "坡道 forge-to-admiralty"
+            },
+            {
+              "from": "forge-east",
+              "to": "forge",
+              "via": "街區步道 forge"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 61.588,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-top",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-top",
+              "to": "hall-foot",
+              "via": "樓梯 steps-3"
+            },
+            {
+              "from": "hall-foot",
+              "to": "quest",
+              "via": "街區步道 hall"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 36.671,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "hw-stair-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "hw-stair-foot",
+              "to": "hw-stair-top",
+              "via": "樓梯 harbor-west-stair"
+            },
+            {
+              "from": "hw-stair-top",
+              "to": "auction",
+              "via": "街區步道 market"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 40.45,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "harbor-east",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "harbor-east",
+              "to": "eh-west",
+              "via": "坡道 harbor-to-eh"
+            },
+            {
+              "from": "eh-west",
+              "to": "bank",
+              "via": "街區步道 east-haven"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 59.707,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-west",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-west",
+              "to": "admiralty-east",
+              "via": "步道 l2-to-admiralty"
+            },
+            {
+              "from": "admiralty-east",
+              "to": "admiralty-west",
+              "via": "街區步道 admiralty"
+            },
+            {
+              "from": "admiralty-west",
+              "to": "forge-east",
+              "via": "坡道 forge-to-admiralty"
+            },
+            {
+              "from": "forge-east",
+              "to": "forge",
+              "via": "街區步道 forge"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 61.588,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-top",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-top",
+              "to": "hall-foot",
+              "via": "樓梯 steps-3"
+            },
+            {
+              "from": "hall-foot",
+              "to": "quest",
+              "via": "街區步道 hall"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 36.671,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "hw-stair-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "hw-stair-foot",
+              "to": "hw-stair-top",
+              "via": "樓梯 harbor-west-stair"
+            },
+            {
+              "from": "hw-stair-top",
+              "to": "auction",
+              "via": "街區步道 market"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 40.45,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "harbor-east",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "harbor-east",
+              "to": "eh-west",
+              "via": "坡道 harbor-to-eh"
+            },
+            {
+              "from": "eh-west",
+              "to": "bank",
+              "via": "街區步道 east-haven"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 59.707,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-west",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-west",
+              "to": "admiralty-east",
+              "via": "步道 l2-to-admiralty"
+            },
+            {
+              "from": "admiralty-east",
+              "to": "admiralty-west",
+              "via": "街區步道 admiralty"
+            },
+            {
+              "from": "admiralty-west",
+              "to": "forge-east",
+              "via": "坡道 forge-to-admiralty"
+            },
+            {
+              "from": "forge-east",
+              "to": "forge",
+              "via": "街區步道 forge"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 61.588,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "steps-foot",
+              "via": "街區步道 harbor"
+            },
+            {
+              "from": "steps-foot",
+              "to": "l1",
+              "via": "樓梯 steps-1"
+            },
+            {
+              "from": "l1",
+              "to": "l2-foot",
+              "via": "樓梯 steps-2"
+            },
+            {
+              "from": "l2-foot",
+              "to": "l2-top",
+              "via": "街區步道 steps-l2"
+            },
+            {
+              "from": "l2-top",
+              "to": "hall-foot",
+              "via": "樓梯 steps-3"
+            },
+            {
+              "from": "hall-foot",
+              "to": "quest",
+              "via": "街區步道 hall"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "harbor",
+      "east-haven",
+      "market",
+      "steps-l1",
+      "forge",
+      "admiralty",
+      "steps-l2",
+      "warhall",
+      "hall",
+      "stele",
+      "cove"
+    ],
+    "reps": {
+      "harbor": "arrival",
+      "east-haven": "bank",
+      "market": "auction",
+      "steps-l1": "l1",
+      "forge": "forge-lift-up",
+      "admiralty": "admiralty",
+      "steps-l2": "l2-west",
+      "warhall": "warhall-lift",
+      "hall": "quest",
+      "stele": "stele",
+      "cove": "cove"
+    },
+    "times": [
+      [
+        0.0,
+        40.45,
+        36.671,
+        18.883,
+        78.673,
+        46.239,
+        39.239,
+        58.36,
+        61.588,
+        94.695,
+        41.807
+      ],
+      [
+        40.45,
+        0.0,
+        73.363,
+        45.025,
+        104.815,
+        72.381,
+        65.381,
+        45.744,
+        87.729,
+        120.837,
+        82.229
+      ],
+      [
+        36.671,
+        73.363,
+        0.0,
+        28.338,
+        47.027,
+        55.694,
+        48.694,
+        67.815,
+        71.043,
+        85.184,
+        46.122
+      ],
+      [
+        18.883,
+        45.025,
+        28.338,
+        0.0,
+        59.79,
+        27.356,
+        20.356,
+        39.476,
+        42.704,
+        75.812,
+        57.887
+      ],
+      [
+        78.673,
+        104.815,
+        47.027,
+        59.79,
+        0.0,
+        32.434,
+        39.434,
+        64.555,
+        63.852,
+        38.157,
+        89.347
+      ],
+      [
+        46.239,
+        72.381,
+        55.694,
+        27.356,
+        32.434,
+        0.0,
+        7.0,
+        32.121,
+        31.417,
+        64.525,
+        85.242
+      ],
+      [
+        39.239,
+        65.381,
+        48.694,
+        20.356,
+        39.434,
+        7.0,
+        0.0,
+        25.121,
+        24.417,
+        57.525,
+        78.242
+      ],
+      [
+        58.36,
+        45.744,
+        67.815,
+        39.476,
+        64.555,
+        32.121,
+        25.121,
+        0.0,
+        43.538,
+        76.646,
+        97.363
+      ],
+      [
+        61.588,
+        87.729,
+        71.043,
+        42.704,
+        63.852,
+        31.417,
+        24.417,
+        43.538,
+        0.0,
+        37.69,
+        100.591
+      ],
+      [
+        94.695,
+        120.837,
+        85.184,
+        75.812,
+        38.157,
+        64.525,
+        57.525,
+        76.646,
+        37.69,
+        0.0,
+        127.504
+      ],
+      [
+        41.807,
+        82.229,
+        46.122,
+        57.887,
+        89.347,
+        85.242,
+        78.242,
+        97.363,
+        100.591,
+        127.504,
+        0.0
+      ]
+    ],
+    "max": 127.504,
+    "max_pair": [
+      "stele",
+      "cove"
+    ],
+    "over_limit": false,
+    "over_target": true
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（全部路線）：61.6 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（不走繩橋）：61.6 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "街區矩陣：最大 127.5 s（stele ↔ cove）> 120s 目標"
+    }
+  ],
+  "nodes": {
+    "arrival": {
+      "id": "arrival",
+      "zone": "harbor",
+      "x": 310.0,
+      "y": 45.0,
+      "z": 3.0,
+      "label": "抵達點"
+    },
+    "customs": {
+      "id": "customs",
+      "zone": "harbor",
+      "x": 200.0,
+      "y": 60.0,
+      "z": 3.0,
+      "label": "稅關"
+    },
+    "hw-stair-foot": {
+      "id": "hw-stair-foot",
+      "zone": "harbor",
+      "x": 205.0,
+      "y": 93.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "steps-foot": {
+      "id": "steps-foot",
+      "zone": "harbor",
+      "x": 340.0,
+      "y": 92.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "harbor-east": {
+      "id": "harbor-east",
+      "zone": "harbor",
+      "x": 470.0,
+      "y": 70.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "cove-gate": {
+      "id": "cove-gate",
+      "zone": "harbor",
+      "x": 145.0,
+      "y": 30.0,
+      "z": 3.0,
+      "label": "守望隊關卡"
+    },
+    "eh-west": {
+      "id": "eh-west",
+      "zone": "east-haven",
+      "x": 485.0,
+      "y": 80.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "east-haven",
+      "x": 540.0,
+      "y": 110.0,
+      "z": 4.0,
+      "label": "九方錢莊（銀行）"
+    },
+    "inn": {
+      "id": "inn",
+      "zone": "east-haven",
+      "x": 560.0,
+      "y": 140.0,
+      "z": 4.0,
+      "label": "九方客棧"
+    },
+    "eh-lift": {
+      "id": "eh-lift",
+      "zone": "east-haven",
+      "x": 485.0,
+      "y": 158.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "eh-ramp-foot": {
+      "id": "eh-ramp-foot",
+      "zone": "east-haven",
+      "x": 585.0,
+      "y": 158.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "hw-stair-top": {
+      "id": "hw-stair-top",
+      "zone": "market",
+      "x": 160.0,
+      "y": 115.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "auction": {
+      "id": "auction",
+      "zone": "market",
+      "x": 170.0,
+      "y": 140.0,
+      "z": 25.0,
+      "label": "拍賣大廳"
+    },
+    "market-east": {
+      "id": "market-east",
+      "zone": "market",
+      "x": 318.0,
+      "y": 137.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "market-lift": {
+      "id": "market-lift",
+      "zone": "market",
+      "x": 90.0,
+      "y": 172.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "l1": {
+      "id": "l1",
+      "zone": "steps-l1",
+      "x": 340.0,
+      "y": 137.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "forge-lift": {
+      "id": "forge-lift",
+      "zone": "forge",
+      "x": 90.0,
+      "y": 192.0,
+      "z": 60.0,
+      "label": ""
+    },
+    "forge-lift-up": {
+      "id": "forge-lift-up",
+      "zone": "forge",
+      "x": 90.0,
+      "y": 262.0,
+      "z": 60.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "forge",
+      "x": 200.0,
+      "y": 230.0,
+      "z": 60.0,
+      "label": "The Forge 公共鍛造台"
+    },
+    "forge-east": {
+      "id": "forge-east",
+      "zone": "forge",
+      "x": 223.0,
+      "y": 230.0,
+      "z": 60.0,
+      "label": ""
+    },
+    "admiralty-west": {
+      "id": "admiralty-west",
+      "zone": "admiralty",
+      "x": 243.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "admiralty": {
+      "id": "admiralty",
+      "zone": "admiralty",
+      "x": 280.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": "銀獅海事衛所"
+    },
+    "admiralty-east": {
+      "id": "admiralty-east",
+      "zone": "admiralty",
+      "x": 318.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "admiralty-north": {
+      "id": "admiralty-north",
+      "zone": "admiralty",
+      "x": 300.0,
+      "y": 262.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "l2-foot": {
+      "id": "l2-foot",
+      "zone": "steps-l2",
+      "x": 340.0,
+      "y": 207.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "l2-west": {
+      "id": "l2-west",
+      "zone": "steps-l2",
+      "x": 322.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "l2-east": {
+      "id": "l2-east",
+      "zone": "steps-l2",
+      "x": 358.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "l2-top": {
+      "id": "l2-top",
+      "zone": "steps-l2",
+      "x": 340.0,
+      "y": 253.0,
+      "z": 65.0,
+      "label": "公約浮雕"
+    },
+    "warhall-west": {
+      "id": "warhall-west",
+      "zone": "warhall",
+      "x": 362.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "warhall": {
+      "id": "warhall",
+      "zone": "warhall",
+      "x": 420.0,
+      "y": 230.0,
+      "z": 65.0,
+      "label": "戰修武閣"
+    },
+    "warhall-north": {
+      "id": "warhall-north",
+      "zone": "warhall",
+      "x": 380.0,
+      "y": 262.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "warhall-lift": {
+      "id": "warhall-lift",
+      "zone": "warhall",
+      "x": 468.0,
+      "y": 198.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "warhall-lift-up": {
+      "id": "warhall-lift-up",
+      "zone": "warhall",
+      "x": 440.0,
+      "y": 262.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "warhall-ramp-top": {
+      "id": "warhall-ramp-top",
+      "zone": "warhall",
+      "x": 580.0,
+      "y": 198.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "hall-foot": {
+      "id": "hall-foot",
+      "zone": "hall",
+      "x": 340.0,
+      "y": 312.0,
+      "z": 100.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "hall",
+      "x": 335.0,
+      "y": 350.0,
+      "z": 100.0,
+      "label": "評議會廳（主線任務、懸賞榜）"
+    },
+    "hall-west": {
+      "id": "hall-west",
+      "zone": "hall",
+      "x": 252.0,
+      "y": 345.0,
+      "z": 100.0,
+      "label": ""
+    },
+    "hall-lift": {
+      "id": "hall-lift",
+      "zone": "hall",
+      "x": 415.0,
+      "y": 312.0,
+      "z": 100.0,
+      "label": ""
+    },
+    "stele-east": {
+      "id": "stele-east",
+      "zone": "stele",
+      "x": 188.0,
+      "y": 345.0,
+      "z": 110.0,
+      "label": ""
+    },
+    "stele": {
+      "id": "stele",
+      "zone": "stele",
+      "x": 110.0,
+      "y": 350.0,
+      "z": 110.0,
+      "label": "戈德里克導航石碑"
+    },
+    "stele-lift": {
+      "id": "stele-lift",
+      "zone": "stele",
+      "x": 90.0,
+      "y": 312.0,
+      "z": 110.0,
+      "label": ""
+    },
+    "cove": {
+      "id": "cove",
+      "zone": "cove",
+      "x": 60.0,
+      "y": 35.0,
+      "z": 2.0,
+      "label": "潮汐維修通道（往鏽錨走私暗灣）"
+    },
+    "west-lift-lower-top": {
+      "id": "west-lift-lower-top",
+      "zone": null,
+      "x": 90.0,
+      "y": 172.0,
+      "z": 60.0,
+      "label": ""
+    },
+    "west-lift-upper-top": {
+      "id": "west-lift-upper-top",
+      "zone": null,
+      "x": 90.0,
+      "y": 262.0,
+      "z": 110.0,
+      "label": ""
+    },
+    "east-lift-lower-top": {
+      "id": "east-lift-lower-top",
+      "zone": null,
+      "x": 485.0,
+      "y": 158.0,
+      "z": 65.0,
+      "label": ""
+    },
+    "east-lift-upper-top": {
+      "id": "east-lift-upper-top",
+      "zone": null,
+      "x": 440.0,
+      "y": 262.0,
+      "z": 100.0,
+      "label": ""
+    }
+  }
+}

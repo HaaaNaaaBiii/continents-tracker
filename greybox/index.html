@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greybox Viewer</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #14212c; color: #e8ecef; font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; }
+  #bar { position: fixed; top: 0; left: 0; right: 0; padding: 8px 12px; background: rgba(16,27,37,.92); display: flex; gap: 16px; align-items: center; z-index: 2; flex-wrap: wrap; }
+  select { background: #1b2d3b; color: inherit; border: 1px solid #4b7f7a; padding: 4px 8px; }
+  #summary { position: fixed; top: 52px; left: 12px; background: rgba(16,27,37,.88); border: 1px solid #4b7f7a; border-radius: 6px; padding: 8px 12px; font-size: 13px; max-width: 420px; z-index: 2; }
+  #summary table { border-collapse: collapse; margin-top: 6px; }
+  #summary td, #summary th { padding: 2px 8px; text-align: right; border-bottom: 1px solid #25394a; }
+  #summary td:first-child, #summary th:first-child { text-align: left; }
+  .PASS { color: #6fd38a; } .FAIL { color: #e05a5a; } .WARN { color: #f0c46a; }
+  #msg { position: fixed; bottom: 8px; left: 12px; font-size: 12px; color: #aebcc6; z-index: 2; }
+  canvas { display: block; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="bar">
+  <strong>Greybox Viewer</strong>
+  <label>城市 <select id="city"></select></label>
+  <span id="status"></span>
+</div>
+<div id="summary">載入中…</div>
+<div id="msg">左鍵旋轉・右鍵平移・滾輪縮放　（用法：repo 根目錄 <code>python -m http.server</code>，開 /tools/greybox/viewer.html；可加 ?glb=路徑&amp;report=路徑）</div>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+
+const SERVICE = { auction: "拍賣行", bank: "銀行／倉庫", forge: "智能工坊 The Forge", quest: "主線任務點" };
+const SCEN = [["all", "全部"], ["no_bridge", "不走繩橋"], ["walk_only", "只走路"]];
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(devicePixelRatio);
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x14212c);
+const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 1, 5000);
+const controls = new OrbitControls(camera, renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x334455, 1.1));
+const sun = new THREE.DirectionalLight(0xffffff, 1.6);
+sun.position.set(300, 500, 200);
+scene.add(sun);
+let current = null;
+
+addEventListener("resize", () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+renderer.setAnimationLoop(() => { controls.update(); renderer.render(scene, camera); });
+
+function cls(v) { return v.startsWith("PASS") ? (v === "PASS" ? "PASS" : "WARN") : "FAIL"; }
+function fmt(t) { return t == null ? "∞" : t.toFixed(1) + " s"; }
+
+async function showReport(url) {
+  const box = document.getElementById("summary");
+  try {
+    const r = await (await fetch(url)).json();
+    let h = `<div><strong>${r.id} ${r.name}</strong> — 整體判定 <strong class="${cls(r.verdict)}">${r.verdict}</strong></div>`;
+    h += "<table><tr><th>核心服務</th>" + SCEN.map(s => `<th>${s[1]}</th>`).join("") + "</tr>";
+    const names = Object.keys(r.scenarios.all.services);
+    for (const n of names) {
+      h += `<tr><td>${SERVICE[n] || n}</td>` + SCEN.map(([k]) => {
+        const e = r.scenarios[k].services[n];
+        return e ? `<td>${fmt(e.time)} ${e.verdict}</td>` : "<td>—</td>";
+      }).join("") + "</tr>";
+    }
+    h += "</table>";
+    h += `<div style="margin-top:6px">街區間最大：${r.matrix.max == null ? "∞" : r.matrix.max.toFixed(1) + " s"}</div>`;
+    const bad = r.flagged.filter(f => f.level !== "✅");
+    if (bad.length) h += "<div style='margin-top:6px'>" + bad.map(f => `${f.level} ${f.text}`).join("<br>") + "</div>";
+    box.innerHTML = h;
+  } catch (e) { box.textContent = "無法載入報告：" + e; }
+}
+
+function loadGlb(url) {
+  document.getElementById("status").textContent = "載入模型…";
+  new GLTFLoader().load(url, (gltf) => {
+    if (current) scene.remove(current);
+    current = gltf.scene;
+    scene.add(current);
+    const box = new THREE.Box3().setFromObject(current);
+    const c = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3()).length();
+    controls.target.copy(c);
+    camera.position.set(c.x + size * 0.1, c.y + size * 0.7, c.z + size * 0.9);
+    camera.near = size / 1000; camera.far = size * 10; camera.updateProjectionMatrix();
+    controls.update();
+    document.getElementById("status").textContent = "";
+  }, undefined, (e) => { document.getElementById("status").textContent = "模型載入失敗：" + (e.message || e); });
+}
+
+async function init() {
+  const params = new URLSearchParams(location.search);
+  const sel = document.getElementById("city");
+  let cities = [];
+  try { cities = await (await fetch("cities.json")).json(); } catch (e) { /* 沒有清單也可用參數 */ }
+  for (const c of cities) {
+    const o = document.createElement("option");
+    o.value = c.id; o.textContent = `${c.id} ${c.name}${c.glb ? "" : "（無模型）"}`;
+    sel.appendChild(o);
+  }
+  const open = (glb, report) => { if (glb) loadGlb(glb); if (report) showReport(report); };
+  sel.addEventListener("change", () => { const c = cities.find(x => x.id === sel.value); open(c.glb, c.report); });
+  if (params.get("glb") || params.get("report")) { open(params.get("glb"), params.get("report")); }
+  else if (cities.length) { sel.dispatchEvent(new Event("change")); }
+  else document.getElementById("summary").textContent = "cities.json 是空的，請先執行 greybox.py";
+}
+init();
+</script>
+</body>
+</html>

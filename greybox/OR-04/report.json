@@ -1,0 +1,1010 @@
+{
+  "id": "OR-04",
+  "name": "凌霄宗",
+  "name_en": "Cloud-Loft Sect",
+  "version": "0.2",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "welcome-ramp",
+      "type": "ramp",
+      "from": "welcome-n",
+      "to": "outer-s",
+      "width": 10.0,
+      "optional": false,
+      "points": [
+        [
+          250.0,
+          88.0,
+          200.0
+        ],
+        [
+          250.0,
+          90.0,
+          200.0
+        ],
+        [
+          250.0,
+          120.0,
+          210.0
+        ],
+        [
+          250.0,
+          125.0,
+          210.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 30.0,
+          "dz": 10.0,
+          "dist3d": 31.623,
+          "slope": 18.435,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 5.27,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 6.437,
+      "climb": {
+        "horizontal": 30.0,
+        "dz": 10.0,
+        "climb_dz_abs": 10.0,
+        "max_slope": 18.435,
+        "no_room": false,
+        "min_len_stairs": 14.281,
+        "min_len_ramp": 27.475
+      }
+    },
+    {
+      "id": "scripture-path",
+      "type": "ramp",
+      "from": "outer-w",
+      "to": "scripture-s",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          155.0,
+          210.0,
+          210.0
+        ],
+        [
+          150.0,
+          210.882,
+          210.0
+        ],
+        [
+          70.0,
+          225.0,
+          231.0
+        ],
+        [
+          70.0,
+          250.0,
+          240.0
+        ],
+        [
+          70.0,
+          255.0,
+          240.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.077,
+          "dz": 0.0,
+          "dist3d": 5.077,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.846,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 81.236,
+          "dz": 21.0,
+          "dist3d": 83.907,
+          "slope": 14.494,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 13.984,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 25.0,
+          "dz": 9.0,
+          "dist3d": 26.571,
+          "slope": 19.799,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 4.428,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 20.092,
+      "climb": {
+        "horizontal": 106.236,
+        "dz": 30.0,
+        "climb_dz_abs": 30.0,
+        "max_slope": 19.799,
+        "no_room": false,
+        "min_len_stairs": 42.844,
+        "min_len_ramp": 82.424
+      }
+    },
+    {
+      "id": "cauldron-path",
+      "type": "ramp",
+      "from": "outer-e",
+      "to": "cauldron-s",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          345.0,
+          210.0,
+          210.0
+        ],
+        [
+          350.0,
+          211.176,
+          210.0
+        ],
+        [
+          430.0,
+          230.0,
+          228.0
+        ],
+        [
+          430.0,
+          250.0,
+          235.0
+        ],
+        [
+          430.0,
+          255.0,
+          235.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.137,
+          "dz": 0.0,
+          "dist3d": 5.137,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.856,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 82.185,
+          "dz": 18.0,
+          "dist3d": 84.133,
+          "slope": 12.354,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 14.022,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 20.0,
+          "dz": 7.0,
+          "dist3d": 21.19,
+          "slope": 19.29,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 3.532,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 19.243,
+      "climb": {
+        "horizontal": 102.185,
+        "dz": 25.0,
+        "climb_dz_abs": 25.0,
+        "max_slope": 19.29,
+        "no_room": false,
+        "min_len_stairs": 35.704,
+        "min_len_ramp": 68.687
+      }
+    },
+    {
+      "id": "heavenly-stair",
+      "type": "stairs",
+      "from": "outer-n",
+      "to": "hall-s",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          250.0,
+          218.0,
+          210.0
+        ],
+        [
+          250.0,
+          220.0,
+          210.0
+        ],
+        [
+          250.0,
+          300.0,
+          260.0
+        ],
+        [
+          250.0,
+          305.0,
+          260.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 80.0,
+          "dz": 50.0,
+          "dist3d": 94.34,
+          "slope": 32.005,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 18.082,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 19.248,
+      "climb": {
+        "horizontal": 80.0,
+        "dz": 50.0,
+        "climb_dz_abs": 50.0,
+        "max_slope": 32.005,
+        "no_room": false,
+        "min_len_stairs": 71.407,
+        "min_len_ramp": 137.374
+      }
+    },
+    {
+      "id": "pool-path",
+      "type": "ramp",
+      "from": "hall-n",
+      "to": "pool-s",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          250.0,
+          418.0,
+          260.0
+        ],
+        [
+          250.0,
+          420.0,
+          260.0
+        ],
+        [
+          250.0,
+          450.0,
+          250.0
+        ],
+        [
+          250.0,
+          455.0,
+          250.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 30.0,
+          "dz": -10.0,
+          "dist3d": 31.623,
+          "slope": 18.435,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 5.27,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 6.437,
+      "climb": {
+        "horizontal": 30.0,
+        "dz": 10.0,
+        "climb_dz_abs": 10.0,
+        "max_slope": 18.435,
+        "no_room": false,
+        "min_len_stairs": 14.281,
+        "min_len_ramp": 27.475
+      }
+    },
+    {
+      "id": "cloud-shuttle",
+      "type": "lift",
+      "from": "outer-shuttle",
+      "to": "cloud-shuttle-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          330.0,
+          215.0,
+          210.0
+        ],
+        [
+          330.0,
+          215.0,
+          260.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 50.0,
+          "dist3d": 50.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 22.667,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 22.667,
+      "climb": null
+    },
+    {
+      "id": "cloud-shuttle-gallery",
+      "type": "walk",
+      "from": "cloud-shuttle-top",
+      "to": "hall-shuttle",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          330.0,
+          215.0,
+          260.0
+        ],
+        [
+          311.111,
+          300.0,
+          260.0
+        ],
+        [
+          310.0,
+          305.0,
+          260.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 87.073,
+          "dz": 0.0,
+          "dist3d": 87.073,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 14.512,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 5.122,
+          "dz": 0.0,
+          "dist3d": 5.122,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.854,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 15.366,
+      "climb": {
+        "horizontal": 87.073,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "forge": {
+          "node": "forge",
+          "time": 60.942,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-e",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-e",
+              "to": "cauldron-s",
+              "via": "坡道 cauldron-path"
+            },
+            {
+              "from": "cauldron-s",
+              "to": "forge",
+              "via": "街區步道 cauldron"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 56.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-n",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-n",
+              "to": "hall-s",
+              "via": "樓梯 heavenly-stair"
+            },
+            {
+              "from": "hall-s",
+              "to": "quest",
+              "via": "街區步道 mainhall"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "forge": {
+          "node": "forge",
+          "time": 60.942,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-e",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-e",
+              "to": "cauldron-s",
+              "via": "坡道 cauldron-path"
+            },
+            {
+              "from": "cauldron-s",
+              "to": "forge",
+              "via": "街區步道 cauldron"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 56.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-n",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-n",
+              "to": "hall-s",
+              "via": "樓梯 heavenly-stair"
+            },
+            {
+              "from": "hall-s",
+              "to": "quest",
+              "via": "街區步道 mainhall"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "forge": {
+          "node": "forge",
+          "time": 60.942,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-e",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-e",
+              "to": "cauldron-s",
+              "via": "坡道 cauldron-path"
+            },
+            {
+              "from": "cauldron-s",
+              "to": "forge",
+              "via": "街區步道 cauldron"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 56.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "welcome-n",
+              "via": "街區步道 welcome"
+            },
+            {
+              "from": "welcome-n",
+              "to": "outer-s",
+              "via": "坡道 welcome-ramp"
+            },
+            {
+              "from": "outer-s",
+              "to": "outer-n",
+              "via": "街區步道 outer"
+            },
+            {
+              "from": "outer-n",
+              "to": "hall-s",
+              "via": "樓梯 heavenly-stair"
+            },
+            {
+              "from": "hall-s",
+              "to": "quest",
+              "via": "街區步道 mainhall"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "welcome",
+      "outer",
+      "scripture",
+      "cauldron",
+      "mainhall",
+      "swordpool"
+    ],
+    "reps": {
+      "welcome": "arrival",
+      "outer": "outer-s",
+      "scripture": "scripture",
+      "cauldron": "forge",
+      "mainhall": "quest",
+      "swordpool": "pool-s"
+    },
+    "times": [
+      [
+        0.0,
+        12.77,
+        63.863,
+        60.942,
+        56.686,
+        72.789
+      ],
+      [
+        12.77,
+        0.0,
+        51.092,
+        48.172,
+        43.915,
+        60.019
+      ],
+      [
+        63.863,
+        51.092,
+        0.0,
+        88.439,
+        74.151,
+        90.255
+      ],
+      [
+        60.942,
+        48.172,
+        88.439,
+        0.0,
+        71.231,
+        87.334
+      ],
+      [
+        56.686,
+        43.915,
+        74.151,
+        71.231,
+        0.0,
+        16.104
+      ],
+      [
+        72.789,
+        60.019,
+        90.255,
+        87.334,
+        16.104,
+        0.0
+      ]
+    ],
+    "max": 90.255,
+    "max_pair": [
+      "scripture",
+      "swordpool"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 forge（全部路線）：60.9 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 forge（不走繩橋）：60.9 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "arrival": {
+      "id": "arrival",
+      "zone": "welcome",
+      "x": 250.0,
+      "y": 50.0,
+      "z": 200.0,
+      "label": "迎仙台傳送陣"
+    },
+    "welcome-n": {
+      "id": "welcome-n",
+      "zone": "welcome",
+      "x": 250.0,
+      "y": 88.0,
+      "z": 200.0,
+      "label": ""
+    },
+    "outer-s": {
+      "id": "outer-s",
+      "zone": "outer",
+      "x": 250.0,
+      "y": 125.0,
+      "z": 210.0,
+      "label": ""
+    },
+    "outer-w": {
+      "id": "outer-w",
+      "zone": "outer",
+      "x": 155.0,
+      "y": 210.0,
+      "z": 210.0,
+      "label": ""
+    },
+    "outer-e": {
+      "id": "outer-e",
+      "zone": "outer",
+      "x": 345.0,
+      "y": 210.0,
+      "z": 210.0,
+      "label": ""
+    },
+    "outer-n": {
+      "id": "outer-n",
+      "zone": "outer",
+      "x": 250.0,
+      "y": 218.0,
+      "z": 210.0,
+      "label": ""
+    },
+    "outer-shuttle": {
+      "id": "outer-shuttle",
+      "zone": "outer",
+      "x": 330.0,
+      "y": 215.0,
+      "z": 210.0,
+      "label": ""
+    },
+    "scripture-s": {
+      "id": "scripture-s",
+      "zone": "scripture",
+      "x": 70.0,
+      "y": 255.0,
+      "z": 240.0,
+      "label": ""
+    },
+    "scripture": {
+      "id": "scripture",
+      "zone": "scripture",
+      "x": 90.0,
+      "y": 310.0,
+      "z": 240.0,
+      "label": "藏經閣"
+    },
+    "cauldron-s": {
+      "id": "cauldron-s",
+      "zone": "cauldron",
+      "x": 430.0,
+      "y": 255.0,
+      "z": 235.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "cauldron",
+      "x": 420.0,
+      "y": 300.0,
+      "z": 235.0,
+      "label": "丹鼎峰丹爐（The Forge）"
+    },
+    "hall-s": {
+      "id": "hall-s",
+      "zone": "mainhall",
+      "x": 250.0,
+      "y": 305.0,
+      "z": 260.0,
+      "label": ""
+    },
+    "hall-shuttle": {
+      "id": "hall-shuttle",
+      "zone": "mainhall",
+      "x": 310.0,
+      "y": 305.0,
+      "z": 260.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "mainhall",
+      "x": 250.0,
+      "y": 360.0,
+      "z": 260.0,
+      "label": "凌霄殿（掌門、主線任務）"
+    },
+    "hall-n": {
+      "id": "hall-n",
+      "zone": "mainhall",
+      "x": 250.0,
+      "y": 418.0,
+      "z": 260.0,
+      "label": ""
+    },
+    "pool-s": {
+      "id": "pool-s",
+      "zone": "swordpool",
+      "x": 250.0,
+      "y": 455.0,
+      "z": 250.0,
+      "label": ""
+    },
+    "cloud-shuttle-top": {
+      "id": "cloud-shuttle-top",
+      "zone": null,
+      "x": 330.0,
+      "y": 215.0,
+      "z": 260.0,
+      "label": ""
+    }
+  }
+}

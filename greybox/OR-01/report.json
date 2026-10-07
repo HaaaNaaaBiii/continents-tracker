@@ -1,0 +1,1202 @@
+{
+  "id": "OR-01",
+  "name": "雲闕城",
+  "name_en": "Cloudgate",
+  "version": "0.2",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "gate-to-wards",
+      "type": "walk",
+      "from": "gate-n",
+      "to": "wards-s",
+      "width": 14.0,
+      "optional": false,
+      "points": [
+        [
+          350.0,
+          68.0,
+          10.0
+        ],
+        [
+          350.0,
+          70.0,
+          10.0
+        ],
+        [
+          350.0,
+          75.0,
+          10.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 1.167,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "iway-stair-1",
+      "type": "stairs",
+      "from": "wards-n",
+      "to": "iway-s",
+      "width": 16.0,
+      "optional": false,
+      "points": [
+        [
+          350.0,
+          225.0,
+          10.0
+        ],
+        [
+          350.0,
+          230.0,
+          10.0
+        ],
+        [
+          350.0,
+          260.0,
+          30.0
+        ],
+        [
+          350.0,
+          262.0,
+          30.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 30.0,
+          "dz": 20.0,
+          "dist3d": 36.056,
+          "slope": 33.69,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 6.911,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 8.077,
+      "climb": {
+        "horizontal": 30.0,
+        "dz": 20.0,
+        "climb_dz_abs": 20.0,
+        "max_slope": 33.69,
+        "no_room": false,
+        "min_len_stairs": 28.563,
+        "min_len_ramp": 54.95
+      }
+    },
+    {
+      "id": "iway-stair-2",
+      "type": "stairs",
+      "from": "iway-n",
+      "to": "furnace-s",
+      "width": 16.0,
+      "optional": false,
+      "points": [
+        [
+          350.0,
+          315.0,
+          30.0
+        ],
+        [
+          350.0,
+          318.0,
+          30.0
+        ],
+        [
+          350.0,
+          350.0,
+          50.0
+        ],
+        [
+          350.0,
+          358.0,
+          50.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 32.0,
+          "dz": 20.0,
+          "dist3d": 37.736,
+          "slope": 32.005,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 7.233,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 8.0,
+          "dz": 0.0,
+          "dist3d": 8.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 9.066,
+      "climb": {
+        "horizontal": 32.0,
+        "dz": 20.0,
+        "climb_dz_abs": 20.0,
+        "max_slope": 32.005,
+        "no_room": false,
+        "min_len_stairs": 28.563,
+        "min_len_ramp": 54.95
+      }
+    },
+    {
+      "id": "furnace-to-bureau",
+      "type": "walk",
+      "from": "furnace-w",
+      "to": "bureau-e",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          262.0,
+          390.0,
+          50.0
+        ],
+        [
+          260.0,
+          390.0,
+          50.0
+        ],
+        [
+          240.0,
+          390.0,
+          50.0
+        ],
+        [
+          238.0,
+          390.0,
+          50.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.0,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "furnace-to-barracks",
+      "type": "walk",
+      "from": "furnace-e",
+      "to": "barracks-w",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          438.0,
+          390.0,
+          50.0
+        ],
+        [
+          440.0,
+          390.0,
+          50.0
+        ],
+        [
+          460.0,
+          390.0,
+          50.0
+        ],
+        [
+          462.0,
+          390.0,
+          50.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.0,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "cloud-stair",
+      "type": "stairs",
+      "from": "furnace-n",
+      "to": "palace-s",
+      "width": 10.0,
+      "optional": false,
+      "points": [
+        [
+          350.0,
+          428.0,
+          50.0
+        ],
+        [
+          348.701,
+          430.0,
+          50.0
+        ],
+        [
+          303.247,
+          500.0,
+          95.0
+        ],
+        [
+          300.0,
+          505.0,
+          95.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.385,
+          "dz": 0.0,
+          "dist3d": 2.385,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.397,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 83.463,
+          "dz": 45.0,
+          "dist3d": 94.821,
+          "slope": 28.332,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 18.174,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.962,
+          "dz": 0.0,
+          "dist3d": 5.962,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.994,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 19.565,
+      "climb": {
+        "horizontal": 83.463,
+        "dz": 45.0,
+        "climb_dz_abs": 45.0,
+        "max_slope": 28.332,
+        "no_room": false,
+        "min_len_stairs": 64.267,
+        "min_len_ramp": 123.636
+      }
+    },
+    {
+      "id": "wind-carriage",
+      "type": "lift",
+      "from": "furnace-lift",
+      "to": "wind-carriage-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          420.0,
+          428.0,
+          50.0
+        ],
+        [
+          420.0,
+          428.0,
+          95.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 45.0,
+          "dist3d": 45.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 21.0,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 21.0,
+      "climb": null
+    },
+    {
+      "id": "wind-carriage-gallery",
+      "type": "walk",
+      "from": "wind-carriage-top",
+      "to": "palace-lift",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          420.0,
+          428.0,
+          95.0
+        ],
+        [
+          420.0,
+          500.0,
+          95.0
+        ],
+        [
+          420.0,
+          505.0,
+          95.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 72.0,
+          "dz": 0.0,
+          "dist3d": 72.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 12.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 12.833,
+      "climb": {
+        "horizontal": 72.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "auction",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 35.477,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "forge",
+              "via": "街區步道 furnace"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 72.587,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "furnace-n",
+              "via": "街區步道 furnace"
+            },
+            {
+              "from": "furnace-n",
+              "to": "palace-s",
+              "via": "樓梯 cloud-stair"
+            },
+            {
+              "from": "palace-s",
+              "to": "quest",
+              "via": "街區步道 palace"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "auction",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 35.477,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "forge",
+              "via": "街區步道 furnace"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 72.587,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "furnace-n",
+              "via": "街區步道 furnace"
+            },
+            {
+              "from": "furnace-n",
+              "to": "palace-s",
+              "via": "樓梯 cloud-stair"
+            },
+            {
+              "from": "palace-s",
+              "to": "quest",
+              "via": "街區步道 palace"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "auction",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 26.352,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 wards"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 35.477,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "forge",
+              "via": "街區步道 furnace"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 72.587,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "wards-n",
+              "via": "街區步道 wards"
+            },
+            {
+              "from": "wards-n",
+              "to": "iway-s",
+              "via": "樓梯 iway-stair-1"
+            },
+            {
+              "from": "iway-s",
+              "to": "iway-n",
+              "via": "街區步道 iway"
+            },
+            {
+              "from": "iway-n",
+              "to": "furnace-s",
+              "via": "樓梯 iway-stair-2"
+            },
+            {
+              "from": "furnace-s",
+              "to": "furnace-n",
+              "via": "街區步道 furnace"
+            },
+            {
+              "from": "furnace-n",
+              "to": "palace-s",
+              "via": "樓梯 cloud-stair"
+            },
+            {
+              "from": "palace-s",
+              "to": "quest",
+              "via": "街區步道 palace"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "southgate",
+      "wards",
+      "iway",
+      "furnace",
+      "bureau",
+      "barracks",
+      "palace"
+    ],
+    "reps": {
+      "southgate": "gate",
+      "wards": "arrival",
+      "iway": "iway-n",
+      "furnace": "forge",
+      "bureau": "bureau",
+      "barracks": "barracks-w",
+      "palace": "quest"
+    },
+    "times": [
+      [
+        0.0,
+        28.333,
+        49.411,
+        63.81,
+        91.189,
+        78.083,
+        100.92
+      ],
+      [
+        28.333,
+        0.0,
+        21.077,
+        35.477,
+        62.856,
+        49.75,
+        72.587
+      ],
+      [
+        49.411,
+        21.077,
+        0.0,
+        14.399,
+        41.779,
+        28.672,
+        51.509
+      ],
+      [
+        63.81,
+        35.477,
+        14.399,
+        0.0,
+        31.773,
+        18.667,
+        37.11
+      ],
+      [
+        91.189,
+        62.856,
+        41.779,
+        31.773,
+        0.0,
+        50.44,
+        63.859
+      ],
+      [
+        78.083,
+        49.75,
+        28.672,
+        18.667,
+        50.44,
+        0.0,
+        50.752
+      ],
+      [
+        100.92,
+        72.587,
+        51.509,
+        37.11,
+        63.859,
+        50.752,
+        0.0
+      ]
+    ],
+    "max": 100.92,
+    "max_pair": [
+      "southgate",
+      "palace"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（全部路線）：72.6 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（不走繩橋）：72.6 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "gate": {
+      "id": "gate",
+      "zone": "southgate",
+      "x": 350.0,
+      "y": 30.0,
+      "z": 10.0,
+      "label": "南闕門"
+    },
+    "gate-n": {
+      "id": "gate-n",
+      "zone": "southgate",
+      "x": 350.0,
+      "y": 68.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "wards-s": {
+      "id": "wards-s",
+      "zone": "wards",
+      "x": 350.0,
+      "y": 75.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "arrival": {
+      "id": "arrival",
+      "zone": "wards",
+      "x": 350.0,
+      "y": 200.0,
+      "z": 10.0,
+      "label": "坊市傳送陣"
+    },
+    "auction": {
+      "id": "auction",
+      "zone": "wards",
+      "x": 200.0,
+      "y": 150.0,
+      "z": 10.0,
+      "label": "坊市交易行（拍賣行）"
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "wards",
+      "x": 500.0,
+      "y": 150.0,
+      "z": 10.0,
+      "label": "通寶錢莊（銀行）"
+    },
+    "wards-n": {
+      "id": "wards-n",
+      "zone": "wards",
+      "x": 350.0,
+      "y": 225.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "iway-s": {
+      "id": "iway-s",
+      "zone": "iway",
+      "x": 350.0,
+      "y": 262.0,
+      "z": 30.0,
+      "label": ""
+    },
+    "iway-n": {
+      "id": "iway-n",
+      "zone": "iway",
+      "x": 350.0,
+      "y": 315.0,
+      "z": 30.0,
+      "label": ""
+    },
+    "furnace-s": {
+      "id": "furnace-s",
+      "zone": "furnace",
+      "x": 350.0,
+      "y": 358.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "furnace",
+      "x": 350.0,
+      "y": 390.0,
+      "z": 50.0,
+      "label": "太虛玄爐（The Forge）"
+    },
+    "furnace-w": {
+      "id": "furnace-w",
+      "zone": "furnace",
+      "x": 262.0,
+      "y": 390.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "furnace-e": {
+      "id": "furnace-e",
+      "zone": "furnace",
+      "x": 438.0,
+      "y": 390.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "furnace-n": {
+      "id": "furnace-n",
+      "zone": "furnace",
+      "x": 350.0,
+      "y": 428.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "furnace-lift": {
+      "id": "furnace-lift",
+      "zone": "furnace",
+      "x": 420.0,
+      "y": 428.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "bureau-e": {
+      "id": "bureau-e",
+      "zone": "bureau",
+      "x": 238.0,
+      "y": 390.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "bureau": {
+      "id": "bureau",
+      "zone": "bureau",
+      "x": 160.0,
+      "y": 400.0,
+      "z": 50.0,
+      "label": "欽天監"
+    },
+    "barracks-w": {
+      "id": "barracks-w",
+      "zone": "barracks",
+      "x": 462.0,
+      "y": 390.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "palace-s": {
+      "id": "palace-s",
+      "zone": "palace",
+      "x": 300.0,
+      "y": 505.0,
+      "z": 95.0,
+      "label": ""
+    },
+    "palace-lift": {
+      "id": "palace-lift",
+      "zone": "palace",
+      "x": 420.0,
+      "y": 505.0,
+      "z": 95.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "palace",
+      "x": 350.0,
+      "y": 550.0,
+      "z": 95.0,
+      "label": "懸浮皇闕（主線任務）"
+    },
+    "wind-carriage-top": {
+      "id": "wind-carriage-top",
+      "zone": null,
+      "x": 420.0,
+      "y": 428.0,
+      "z": 95.0,
+      "label": ""
+    }
+  }
+}

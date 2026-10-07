@@ -1,0 +1,1281 @@
+{
+  "id": "EU-01",
+  "name": "艾森堡",
+  "name_en": "Eisenburg",
+  "version": "0.3",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "south-gate",
+      "type": "ramp",
+      "from": "gate-in",
+      "to": "exchange-gate",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          360.0,
+          68.0,
+          8.0
+        ],
+        [
+          360.0,
+          70.0,
+          8.0
+        ],
+        [
+          360.0,
+          80.0,
+          10.0
+        ],
+        [
+          360.0,
+          84.0,
+          10.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 2.0,
+          "dist3d": 10.198,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.7,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 4.0,
+          "dz": 0.0,
+          "dist3d": 4.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.667,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 2.7,
+      "climb": {
+        "horizontal": 10.0,
+        "dz": 2.0,
+        "climb_dz_abs": 2.0,
+        "max_slope": 11.31,
+        "no_room": false,
+        "min_len_stairs": 2.856,
+        "min_len_ramp": 5.495
+      }
+    },
+    {
+      "id": "exchange-to-locks",
+      "type": "ramp",
+      "from": "exchange-n",
+      "to": "locks-s",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          360.0,
+          185.0,
+          10.0
+        ],
+        [
+          360.0,
+          192.0,
+          10.0
+        ],
+        [
+          360.0,
+          200.0,
+          12.0
+        ],
+        [
+          360.0,
+          202.0,
+          12.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 7.0,
+          "dz": 0.0,
+          "dist3d": 7.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 1.167,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 8.0,
+          "dz": 2.0,
+          "dist3d": 8.246,
+          "slope": 14.036,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.374,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 2.874,
+      "climb": {
+        "horizontal": 8.0,
+        "dz": 2.0,
+        "climb_dz_abs": 2.0,
+        "max_slope": 14.036,
+        "no_room": false,
+        "min_len_stairs": 2.856,
+        "min_len_ramp": 5.495
+      }
+    },
+    {
+      "id": "exchange-to-smelter",
+      "type": "walk",
+      "from": "exchange-e",
+      "to": "smelter-w",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          558.0,
+          150.0,
+          10.0
+        ],
+        [
+          560.0,
+          150.0,
+          10.0
+        ],
+        [
+          562.0,
+          150.0,
+          10.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 0.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "locks-to-crucible",
+      "type": "walk",
+      "from": "locks-n",
+      "to": "crucible-s",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          340.0,
+          258.0,
+          12.0
+        ],
+        [
+          340.0,
+          260.0,
+          12.0
+        ],
+        [
+          340.0,
+          262.0,
+          12.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 0.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "locks-to-cathedral",
+      "type": "ramp",
+      "from": "locks-e",
+      "to": "cathedral-w",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          418.0,
+          240.0,
+          12.0
+        ],
+        [
+          420.0,
+          259.429,
+          12.0
+        ],
+        [
+          424.691,
+          305.0,
+          28.0
+        ],
+        [
+          425.0,
+          308.0,
+          28.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 19.531,
+          "dz": 0.0,
+          "dist3d": 19.531,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 3.255,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 45.812,
+          "dz": 16.0,
+          "dist3d": 48.526,
+          "slope": 19.252,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 8.088,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 3.016,
+          "dz": 0.0,
+          "dist3d": 3.016,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.503,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 11.845,
+      "climb": {
+        "horizontal": 45.812,
+        "dz": 16.0,
+        "climb_dz_abs": 16.0,
+        "max_slope": 19.252,
+        "no_room": false,
+        "min_len_stairs": 22.85,
+        "min_len_ramp": 43.96
+      }
+    },
+    {
+      "id": "oath-stair",
+      "type": "stairs",
+      "from": "crucible-n",
+      "to": "bastion-s",
+      "width": 10.0,
+      "optional": false,
+      "points": [
+        [
+          230.0,
+          358.0,
+          12.0
+        ],
+        [
+          232.09,
+          360.0,
+          12.0
+        ],
+        [
+          294.776,
+          420.0,
+          55.0
+        ],
+        [
+          300.0,
+          425.0,
+          55.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.892,
+          "dz": 0.0,
+          "dist3d": 2.892,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.482,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 86.773,
+          "dz": 43.0,
+          "dist3d": 96.843,
+          "slope": 26.36,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 18.562,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 7.231,
+          "dz": 0.0,
+          "dist3d": 7.231,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.205,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 20.249,
+      "climb": {
+        "horizontal": 86.773,
+        "dz": 43.0,
+        "climb_dz_abs": 43.0,
+        "max_slope": 26.36,
+        "no_room": false,
+        "min_len_stairs": 61.41,
+        "min_len_ramp": 118.142
+      }
+    },
+    {
+      "id": "cathedral-stair",
+      "type": "stairs",
+      "from": "cathedral-n",
+      "to": "bastion-e",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          450.0,
+          372.0,
+          28.0
+        ],
+        [
+          451.034,
+          375.0,
+          28.0
+        ],
+        [
+          466.552,
+          420.0,
+          55.0
+        ],
+        [
+          470.0,
+          430.0,
+          55.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 3.173,
+          "dz": 0.0,
+          "dist3d": 3.173,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.529,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 47.6,
+          "dz": 27.0,
+          "dist3d": 54.725,
+          "slope": 29.563,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 10.489,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.578,
+          "dz": 0.0,
+          "dist3d": 10.578,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.763,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 12.781,
+      "climb": {
+        "horizontal": 47.6,
+        "dz": 27.0,
+        "climb_dz_abs": 27.0,
+        "max_slope": 29.563,
+        "no_room": false,
+        "min_len_stairs": 38.56,
+        "min_len_ramp": 74.182
+      }
+    },
+    {
+      "id": "alchemical-hoist",
+      "type": "lift",
+      "from": "crucible-hoist",
+      "to": "alchemical-hoist-top",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          370.0,
+          350.0,
+          12.0
+        ],
+        [
+          370.0,
+          350.0,
+          55.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 0.0,
+          "dz": 43.0,
+          "dist3d": 43.0,
+          "slope": 90.0,
+          "kind": "lift",
+          "region": "lift",
+          "time": 20.333,
+          "verdict": "✅",
+          "note": "升降台不檢查坡度"
+        }
+      ],
+      "time": 20.333,
+      "climb": null
+    },
+    {
+      "id": "alchemical-hoist-gallery",
+      "type": "walk",
+      "from": "alchemical-hoist-top",
+      "to": "bastion-hoist",
+      "width": 4.0,
+      "optional": false,
+      "points": [
+        [
+          370.0,
+          350.0,
+          55.0
+        ],
+        [
+          370.0,
+          420.0,
+          55.0
+        ],
+        [
+          370.0,
+          425.0,
+          55.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 70.0,
+          "dz": 0.0,
+          "dist3d": 70.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 11.667,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 12.5,
+      "climb": {
+        "horizontal": 70.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "auction",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "bank",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 21.951,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-n",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-n",
+              "to": "crucible-s",
+              "via": "步道 locks-to-crucible"
+            },
+            {
+              "from": "crucible-s",
+              "to": "forge",
+              "via": "街區步道 crucible"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 62.302,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-e",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-e",
+              "to": "cathedral-w",
+              "via": "坡道 locks-to-cathedral"
+            },
+            {
+              "from": "cathedral-w",
+              "to": "cathedral-n",
+              "via": "街區步道 cathedral"
+            },
+            {
+              "from": "cathedral-n",
+              "to": "bastion-e",
+              "via": "樓梯 cathedral-stair"
+            },
+            {
+              "from": "bastion-e",
+              "to": "quest",
+              "via": "街區步道 bastion"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "auction",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "bank",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 21.951,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-n",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-n",
+              "to": "crucible-s",
+              "via": "步道 locks-to-crucible"
+            },
+            {
+              "from": "crucible-s",
+              "to": "forge",
+              "via": "街區步道 crucible"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 62.302,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-e",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-e",
+              "to": "cathedral-w",
+              "via": "坡道 locks-to-cathedral"
+            },
+            {
+              "from": "cathedral-w",
+              "to": "cathedral-n",
+              "via": "街區步道 cathedral"
+            },
+            {
+              "from": "cathedral-n",
+              "to": "bastion-e",
+              "via": "樓梯 cathedral-stair"
+            },
+            {
+              "from": "bastion-e",
+              "to": "quest",
+              "via": "街區步道 bastion"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "auction",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 27.349,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-s",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-s",
+              "to": "exchange-n",
+              "via": "坡道 exchange-to-locks"
+            },
+            {
+              "from": "exchange-n",
+              "to": "bank",
+              "via": "街區步道 exchange"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 21.951,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-n",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-n",
+              "to": "crucible-s",
+              "via": "步道 locks-to-crucible"
+            },
+            {
+              "from": "crucible-s",
+              "to": "forge",
+              "via": "街區步道 crucible"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 62.302,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "locks-e",
+              "via": "街區步道 locks"
+            },
+            {
+              "from": "locks-e",
+              "to": "cathedral-w",
+              "via": "坡道 locks-to-cathedral"
+            },
+            {
+              "from": "cathedral-w",
+              "to": "cathedral-n",
+              "via": "街區步道 cathedral"
+            },
+            {
+              "from": "cathedral-n",
+              "to": "bastion-e",
+              "via": "樓梯 cathedral-stair"
+            },
+            {
+              "from": "bastion-e",
+              "to": "quest",
+              "via": "街區步道 bastion"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "barracks",
+      "exchange",
+      "locks",
+      "crucible",
+      "cathedral",
+      "bastion",
+      "smelter"
+    ],
+    "reps": {
+      "barracks": "newbie-start",
+      "exchange": "exchange-n",
+      "locks": "arrival",
+      "crucible": "forge",
+      "cathedral": "cathedral",
+      "bastion": "quest",
+      "smelter": "smelter-w"
+    },
+    "times": [
+      [
+        0.0,
+        25.866,
+        33.407,
+        54.867,
+        68.85,
+        92.79,
+        44.485
+      ],
+      [
+        25.866,
+        0.0,
+        7.541,
+        29.001,
+        42.984,
+        66.924,
+        34.178
+      ],
+      [
+        33.407,
+        7.541,
+        0.0,
+        21.951,
+        38.362,
+        62.302,
+        41.719
+      ],
+      [
+        54.867,
+        29.001,
+        21.951,
+        0.0,
+        58.11,
+        44.981,
+        63.179
+      ],
+      [
+        68.85,
+        42.984,
+        38.362,
+        58.11,
+        0.0,
+        42.023,
+        77.162
+      ],
+      [
+        92.79,
+        66.924,
+        62.302,
+        44.981,
+        42.023,
+        0.0,
+        101.102
+      ],
+      [
+        44.485,
+        34.178,
+        41.719,
+        63.179,
+        77.162,
+        101.102,
+        0.0
+      ]
+    ],
+    "max": 101.102,
+    "max_pair": [
+      "bastion",
+      "smelter"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（全部路線）：62.3 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（不走繩橋）：62.3 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "newbie-start": {
+      "id": "newbie-start",
+      "zone": "barracks",
+      "x": 360.0,
+      "y": 30.0,
+      "z": 8.0,
+      "label": "外圍軍營（新手起點）"
+    },
+    "gate-in": {
+      "id": "gate-in",
+      "zone": "barracks",
+      "x": 360.0,
+      "y": 68.0,
+      "z": 8.0,
+      "label": ""
+    },
+    "exchange-gate": {
+      "id": "exchange-gate",
+      "zone": "exchange",
+      "x": 360.0,
+      "y": 84.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "auction": {
+      "id": "auction",
+      "zone": "exchange",
+      "x": 250.0,
+      "y": 140.0,
+      "z": 10.0,
+      "label": "運河交易所（拍賣行）"
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "exchange",
+      "x": 470.0,
+      "y": 140.0,
+      "z": 10.0,
+      "label": "公約銀庫（銀行）"
+    },
+    "exchange-n": {
+      "id": "exchange-n",
+      "zone": "exchange",
+      "x": 360.0,
+      "y": 185.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "exchange-e": {
+      "id": "exchange-e",
+      "zone": "exchange",
+      "x": 558.0,
+      "y": 150.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "smelter-w": {
+      "id": "smelter-w",
+      "zone": "smelter",
+      "x": 562.0,
+      "y": 150.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "locks-s": {
+      "id": "locks-s",
+      "zone": "locks",
+      "x": 360.0,
+      "y": 202.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "locks-n": {
+      "id": "locks-n",
+      "zone": "locks",
+      "x": 340.0,
+      "y": 258.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "locks-e": {
+      "id": "locks-e",
+      "zone": "locks",
+      "x": 418.0,
+      "y": 240.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "crucible-s": {
+      "id": "crucible-s",
+      "zone": "crucible",
+      "x": 340.0,
+      "y": 262.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "crucible",
+      "x": 260.0,
+      "y": 310.0,
+      "z": 12.0,
+      "label": "聖言熔爐（The Forge）"
+    },
+    "crucible-n": {
+      "id": "crucible-n",
+      "zone": "crucible",
+      "x": 230.0,
+      "y": 358.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "crucible-hoist": {
+      "id": "crucible-hoist",
+      "zone": "crucible",
+      "x": 370.0,
+      "y": 350.0,
+      "z": 12.0,
+      "label": ""
+    },
+    "cathedral-w": {
+      "id": "cathedral-w",
+      "zone": "cathedral",
+      "x": 425.0,
+      "y": 308.0,
+      "z": 28.0,
+      "label": ""
+    },
+    "cathedral": {
+      "id": "cathedral",
+      "zone": "cathedral",
+      "x": 520.0,
+      "y": 340.0,
+      "z": 28.0,
+      "label": "舊神大聖堂"
+    },
+    "cathedral-n": {
+      "id": "cathedral-n",
+      "zone": "cathedral",
+      "x": 450.0,
+      "y": 372.0,
+      "z": 28.0,
+      "label": ""
+    },
+    "bastion-s": {
+      "id": "bastion-s",
+      "zone": "bastion",
+      "x": 300.0,
+      "y": 425.0,
+      "z": 55.0,
+      "label": ""
+    },
+    "bastion-e": {
+      "id": "bastion-e",
+      "zone": "bastion",
+      "x": 470.0,
+      "y": 430.0,
+      "z": 55.0,
+      "label": ""
+    },
+    "bastion-hoist": {
+      "id": "bastion-hoist",
+      "zone": "bastion",
+      "x": 370.0,
+      "y": 425.0,
+      "z": 55.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "bastion",
+      "x": 380.0,
+      "y": 470.0,
+      "z": 55.0,
+      "label": "鐵心要塞統帥部（主線任務）"
+    },
+    "alchemical-hoist-top": {
+      "id": "alchemical-hoist-top",
+      "zone": null,
+      "x": 370.0,
+      "y": 350.0,
+      "z": 55.0,
+      "label": ""
+    },
+    "arrival": {
+      "id": "arrival",
+      "zone": "locks",
+      "x": 360.0,
+      "y": 230.0,
+      "z": 12.0,
+      "label": "閘門橋廣場傳送點（城市主傳送點）"
+    }
+  }
+}

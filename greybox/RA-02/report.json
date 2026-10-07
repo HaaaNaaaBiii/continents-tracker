@@ -1,0 +1,1068 @@
+{
+  "id": "RA-02",
+  "name": "落星穹頂",
+  "name_en": "Falling Star Vault",
+  "version": "0.1",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "rim-sw",
+      "type": "walk",
+      "from": "dock-w",
+      "to": "salvage-s",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          172.0,
+          60.0,
+          10.0
+        ],
+        [
+          170.0,
+          60.0,
+          10.0
+        ],
+        [
+          65.0,
+          60.0,
+          10.0
+        ],
+        [
+          65.0,
+          150.0,
+          10.0
+        ],
+        [
+          65.0,
+          152.0,
+          10.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 105.0,
+          "dz": 0.0,
+          "dist3d": 105.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 17.5,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 90.0,
+          "dz": 0.0,
+          "dist3d": 90.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 15.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 33.167,
+      "climb": {
+        "horizontal": 195.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "rim-se",
+      "type": "ramp",
+      "from": "dock-e",
+      "to": "scriptorium-s",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          328.0,
+          60.0,
+          10.0
+        ],
+        [
+          330.0,
+          60.0,
+          10.0
+        ],
+        [
+          435.0,
+          60.0,
+          10.0
+        ],
+        [
+          435.0,
+          90.0,
+          10.0
+        ],
+        [
+          435.0,
+          150.0,
+          25.0
+        ],
+        [
+          435.0,
+          152.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 105.0,
+          "dz": 0.0,
+          "dist3d": 105.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 17.5,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 30.0,
+          "dz": 0.0,
+          "dist3d": 30.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 5.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 60.0,
+          "dz": 15.0,
+          "dist3d": 61.847,
+          "slope": 14.036,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 10.308,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 5,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 33.474,
+      "climb": {
+        "horizontal": 195.0,
+        "dz": 15.0,
+        "climb_dz_abs": 15.0,
+        "max_slope": 14.036,
+        "no_room": false,
+        "min_len_stairs": 21.422,
+        "min_len_ramp": 41.212
+      }
+    },
+    {
+      "id": "rim-nw",
+      "type": "ramp",
+      "from": "salvage-n",
+      "to": "speaker-w",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          65.0,
+          348.0,
+          10.0
+        ],
+        [
+          65.0,
+          350.0,
+          10.0
+        ],
+        [
+          65.0,
+          400.0,
+          10.0
+        ],
+        [
+          170.0,
+          444.159,
+          25.0
+        ],
+        [
+          172.0,
+          445.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 50.0,
+          "dz": 0.0,
+          "dist3d": 50.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 8.333,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 113.908,
+          "dz": 15.0,
+          "dist3d": 114.891,
+          "slope": 7.502,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 19.149,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.17,
+          "dz": 0.0,
+          "dist3d": 2.17,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.362,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 28.177,
+      "climb": {
+        "horizontal": 163.908,
+        "dz": 15.0,
+        "climb_dz_abs": 15.0,
+        "max_slope": 7.502,
+        "no_room": false,
+        "min_len_stairs": 21.422,
+        "min_len_ramp": 41.212
+      }
+    },
+    {
+      "id": "rim-ne",
+      "type": "walk",
+      "from": "scriptorium-n",
+      "to": "speaker-e",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          435.0,
+          348.0,
+          25.0
+        ],
+        [
+          435.0,
+          350.0,
+          25.0
+        ],
+        [
+          435.0,
+          445.0,
+          25.0
+        ],
+        [
+          330.0,
+          445.0,
+          25.0
+        ],
+        [
+          328.0,
+          445.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 95.0,
+          "dz": 0.0,
+          "dist3d": 95.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 15.833,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 105.0,
+          "dz": 0.0,
+          "dist3d": 105.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 17.5,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 34.0,
+      "climb": {
+        "horizontal": 200.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "star-bridge-s",
+      "type": "walk",
+      "from": "dock-n",
+      "to": "dome-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          250.0,
+          88.0,
+          10.0
+        ],
+        [
+          250.0,
+          90.0,
+          10.0
+        ],
+        [
+          250.0,
+          200.0,
+          15.0
+        ],
+        [
+          250.0,
+          202.0,
+          15.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 110.0,
+          "dz": 5.0,
+          "dist3d": 110.114,
+          "slope": 2.603,
+          "kind": "walk",
+          "region": "climb",
+          "time": 18.352,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 19.019,
+      "climb": {
+        "horizontal": 110.0,
+        "dz": 5.0,
+        "climb_dz_abs": 5.0,
+        "max_slope": 2.603,
+        "no_room": false,
+        "min_len_stairs": 7.141,
+        "min_len_ramp": 13.737
+      }
+    },
+    {
+      "id": "star-bridge-w",
+      "type": "walk",
+      "from": "salvage-e",
+      "to": "dome-w",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          108.0,
+          250.0,
+          10.0
+        ],
+        [
+          110.0,
+          250.0,
+          10.0
+        ],
+        [
+          200.0,
+          250.0,
+          15.0
+        ],
+        [
+          202.0,
+          250.0,
+          15.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 90.0,
+          "dz": 5.0,
+          "dist3d": 90.139,
+          "slope": 3.18,
+          "kind": "walk",
+          "region": "climb",
+          "time": 15.023,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 15.69,
+      "climb": {
+        "horizontal": 90.0,
+        "dz": 5.0,
+        "climb_dz_abs": 5.0,
+        "max_slope": 3.18,
+        "no_room": false,
+        "min_len_stairs": 7.141,
+        "min_len_ramp": 13.737
+      }
+    },
+    {
+      "id": "star-bridge-n",
+      "type": "walk",
+      "from": "dome-n",
+      "to": "speaker-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          250.0,
+          298.0,
+          15.0
+        ],
+        [
+          250.0,
+          300.0,
+          15.0
+        ],
+        [
+          250.0,
+          410.0,
+          25.0
+        ],
+        [
+          250.0,
+          412.0,
+          25.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 110.0,
+          "dz": 10.0,
+          "dist3d": 110.454,
+          "slope": 5.194,
+          "kind": "walk",
+          "region": "climb",
+          "time": 18.409,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 19.076,
+      "climb": {
+        "horizontal": 110.0,
+        "dz": 10.0,
+        "climb_dz_abs": 10.0,
+        "max_slope": 5.194,
+        "no_room": false,
+        "min_len_stairs": 14.281,
+        "min_len_ramp": 27.475
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 8.498,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 dock"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 66.761,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "dock-n",
+              "via": "街區步道 dock"
+            },
+            {
+              "from": "dock-n",
+              "to": "dome-s",
+              "via": "步道 star-bridge-s"
+            },
+            {
+              "from": "dome-s",
+              "to": "dome-n",
+              "via": "街區步道 dome"
+            },
+            {
+              "from": "dome-n",
+              "to": "speaker-s",
+              "via": "步道 star-bridge-n"
+            },
+            {
+              "from": "speaker-s",
+              "to": "quest",
+              "via": "街區步道 speaker"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 8.498,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 dock"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 66.761,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "dock-n",
+              "via": "街區步道 dock"
+            },
+            {
+              "from": "dock-n",
+              "to": "dome-s",
+              "via": "步道 star-bridge-s"
+            },
+            {
+              "from": "dome-s",
+              "to": "dome-n",
+              "via": "街區步道 dome"
+            },
+            {
+              "from": "dome-n",
+              "to": "speaker-s",
+              "via": "步道 star-bridge-n"
+            },
+            {
+              "from": "speaker-s",
+              "to": "quest",
+              "via": "街區步道 speaker"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 8.498,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 dock"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 66.761,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "dock-n",
+              "via": "街區步道 dock"
+            },
+            {
+              "from": "dock-n",
+              "to": "dome-s",
+              "via": "步道 star-bridge-s"
+            },
+            {
+              "from": "dome-s",
+              "to": "dome-n",
+              "via": "街區步道 dome"
+            },
+            {
+              "from": "dome-n",
+              "to": "speaker-s",
+              "via": "步道 star-bridge-n"
+            },
+            {
+              "from": "speaker-s",
+              "to": "quest",
+              "via": "街區步道 speaker"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "dock",
+      "salvage",
+      "scriptorium",
+      "speaker",
+      "dome"
+    ],
+    "reps": {
+      "dock": "arrival",
+      "salvage": "salvage-e",
+      "scriptorium": "scriptorium",
+      "speaker": "quest",
+      "dome": "dome-core"
+    },
+    "times": [
+      [
+        0.0,
+        52.356,
+        62.914,
+        66.761,
+        33.352
+      ],
+      [
+        52.356,
+        0.0,
+        109.642,
+        52.412,
+        23.69
+      ],
+      [
+        62.914,
+        109.642,
+        0.0,
+        63.36,
+        90.639
+      ],
+      [
+        66.761,
+        52.412,
+        63.36,
+        0.0,
+        33.409
+      ],
+      [
+        33.352,
+        23.69,
+        90.639,
+        33.409,
+        0.0
+      ]
+    ],
+    "max": 109.642,
+    "max_pair": [
+      "scriptorium",
+      "salvage"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（全部路線）：66.8 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 quest（不走繩橋）：66.8 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "arrival": {
+      "id": "arrival",
+      "zone": "dock",
+      "x": 250.0,
+      "y": 50.0,
+      "z": 10.0,
+      "label": "環港碼頭"
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "dock",
+      "x": 300.0,
+      "y": 60.0,
+      "z": 10.0,
+      "label": "評議會匯兌處（銀行）"
+    },
+    "dock-w": {
+      "id": "dock-w",
+      "zone": "dock",
+      "x": 172.0,
+      "y": 60.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "dock-e": {
+      "id": "dock-e",
+      "zone": "dock",
+      "x": 328.0,
+      "y": 60.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "dock-n": {
+      "id": "dock-n",
+      "zone": "dock",
+      "x": 250.0,
+      "y": 88.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "salvage-s": {
+      "id": "salvage-s",
+      "zone": "salvage",
+      "x": 65.0,
+      "y": 152.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "salvage-e": {
+      "id": "salvage-e",
+      "zone": "salvage",
+      "x": 108.0,
+      "y": 250.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "salvage-n": {
+      "id": "salvage-n",
+      "zone": "salvage",
+      "x": 65.0,
+      "y": 348.0,
+      "z": 10.0,
+      "label": ""
+    },
+    "scriptorium-s": {
+      "id": "scriptorium-s",
+      "zone": "scriptorium",
+      "x": 435.0,
+      "y": 152.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "scriptorium": {
+      "id": "scriptorium",
+      "zone": "scriptorium",
+      "x": 435.0,
+      "y": 250.0,
+      "z": 25.0,
+      "label": "晦明研究所"
+    },
+    "scriptorium-n": {
+      "id": "scriptorium-n",
+      "zone": "scriptorium",
+      "x": 435.0,
+      "y": 348.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "speaker-w": {
+      "id": "speaker-w",
+      "zone": "speaker",
+      "x": 172.0,
+      "y": 445.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "speaker-e": {
+      "id": "speaker-e",
+      "zone": "speaker",
+      "x": 328.0,
+      "y": 445.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "speaker-s": {
+      "id": "speaker-s",
+      "zone": "speaker",
+      "x": 250.0,
+      "y": 412.0,
+      "z": 25.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "speaker",
+      "x": 250.0,
+      "y": 450.0,
+      "z": 25.0,
+      "label": "議長官邸（主線任務）"
+    },
+    "dome-s": {
+      "id": "dome-s",
+      "zone": "dome",
+      "x": 250.0,
+      "y": 202.0,
+      "z": 15.0,
+      "label": ""
+    },
+    "dome-w": {
+      "id": "dome-w",
+      "zone": "dome",
+      "x": 202.0,
+      "y": 250.0,
+      "z": 15.0,
+      "label": ""
+    },
+    "dome-n": {
+      "id": "dome-n",
+      "zone": "dome",
+      "x": 250.0,
+      "y": 298.0,
+      "z": 15.0,
+      "label": ""
+    },
+    "dome-core": {
+      "id": "dome-core",
+      "zone": "dome",
+      "x": 250.0,
+      "y": 250.0,
+      "z": 15.0,
+      "label": "隕星核心（團隊副本入口）"
+    }
+  }
+}

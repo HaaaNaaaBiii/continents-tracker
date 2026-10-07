@@ -1,0 +1,83 @@
+[
+  {
+    "id": "EU-01",
+    "name": "艾森堡",
+    "name_en": "Eisenburg",
+    "verdict": "PASS（有標註）",
+    "glb": "EU-01/greybox.glb",
+    "report": "EU-01/report.json",
+    "plan": "EU-01/plan.png"
+  },
+  {
+    "id": "EU-02",
+    "name": "霧環堡",
+    "name_en": "Nebelburg",
+    "verdict": "PASS",
+    "glb": "EU-02/greybox.glb",
+    "report": "EU-02/report.json",
+    "plan": "EU-02/plan.png"
+  },
+  {
+    "id": "EU-03",
+    "name": "霜灣港",
+    "name_en": "Frostfjord Port",
+    "verdict": "PASS（有標註）",
+    "glb": "EU-03/greybox.glb",
+    "report": "EU-03/report.json",
+    "plan": "EU-03/plan.png"
+  },
+  {
+    "id": "OR-01",
+    "name": "雲闕城",
+    "name_en": "Cloudgate",
+    "verdict": "PASS（有標註）",
+    "glb": "OR-01/greybox.glb",
+    "report": "OR-01/report.json",
+    "plan": "OR-01/plan.png"
+  },
+  {
+    "id": "OR-02",
+    "name": "碧瀾商都",
+    "name_en": "Jade-Ripple Emporium",
+    "verdict": "PASS（有標註）",
+    "glb": "OR-02/greybox.glb",
+    "report": "OR-02/report.json",
+    "plan": "OR-02/plan.png"
+  },
+  {
+    "id": "OR-03",
+    "name": "斷雲關",
+    "name_en": "Cloud-Sever Pass",
+    "verdict": "PASS",
+    "glb": "OR-03/greybox.glb",
+    "report": "OR-03/report.json",
+    "plan": "OR-03/plan.png"
+  },
+  {
+    "id": "OR-04",
+    "name": "凌霄宗",
+    "name_en": "Cloud-Loft Sect",
+    "verdict": "PASS（有標註）",
+    "glb": "OR-04/greybox.glb",
+    "report": "OR-04/report.json",
+    "plan": "OR-04/plan.png"
+  },
+  {
+    "id": "RA-01",
+    "name": "鯨骨自由港",
+    "name_en": "Whalebone Freeport",
+    "verdict": "PASS（有標註）",
+    "glb": "RA-01/greybox.glb",
+    "report": "RA-01/report.json",
+    "plan": "RA-01/plan.png"
+  },
+  {
+    "id": "RA-02",
+    "name": "落星穹頂",
+    "name_en": "Falling Star Vault",
+    "verdict": "PASS（有標註）",
+    "glb": "RA-02/greybox.glb",
+    "report": "RA-02/report.json",
+    "plan": "RA-02/plan.png"
+  }
+]

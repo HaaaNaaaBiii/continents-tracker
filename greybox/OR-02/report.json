@@ -1,0 +1,1432 @@
+{
+  "id": "OR-02",
+  "name": "碧瀾商都",
+  "name_en": "Jade-Ripple Emporium",
+  "version": "0.2",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "bridge-quay-brocade",
+      "type": "ramp",
+      "from": "quay-w",
+      "to": "brocade-s",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          220.0,
+          88.0,
+          3.0
+        ],
+        [
+          220.0,
+          90.0,
+          3.0
+        ],
+        [
+          220.0,
+          100.0,
+          6.5
+        ],
+        [
+          220.0,
+          110.0,
+          4.0
+        ],
+        [
+          220.0,
+          112.0,
+          4.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.5,
+          "dist3d": 10.595,
+          "slope": 19.29,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.766,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": -2.5,
+          "dist3d": 10.308,
+          "slope": 14.036,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.718,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.15,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 1.0,
+        "climb_dz_abs": 6.0,
+        "max_slope": 19.29,
+        "no_room": false,
+        "min_len_stairs": 1.428,
+        "min_len_ramp": 2.747
+      }
+    },
+    {
+      "id": "bridge-quay-tower",
+      "type": "ramp",
+      "from": "quay-e",
+      "to": "tower-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          400.0,
+          88.0,
+          3.0
+        ],
+        [
+          400.0,
+          90.0,
+          3.0
+        ],
+        [
+          400.0,
+          100.0,
+          6.0
+        ],
+        [
+          400.0,
+          110.0,
+          6.0
+        ],
+        [
+          400.0,
+          112.0,
+          6.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": 0.0,
+          "dist3d": 10.0,
+          "slope": 0.0,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.667,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.073,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 3.0,
+        "climb_dz_abs": 3.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 4.284,
+        "min_len_ramp": 8.242
+      }
+    },
+    {
+      "id": "bridge-brocade-tower",
+      "type": "ramp",
+      "from": "brocade-e",
+      "to": "tower-w",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          278.0,
+          180.0,
+          4.0
+        ],
+        [
+          280.0,
+          180.0,
+          4.0
+        ],
+        [
+          300.0,
+          180.0,
+          8.0
+        ],
+        [
+          320.0,
+          180.0,
+          6.0
+        ],
+        [
+          322.0,
+          180.0,
+          6.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 20.0,
+          "dz": 4.0,
+          "dist3d": 20.396,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 3.399,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 20.0,
+          "dz": -2.0,
+          "dist3d": 20.1,
+          "slope": 5.711,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 3.35,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 7.416,
+      "climb": {
+        "horizontal": 40.0,
+        "dz": 2.0,
+        "climb_dz_abs": 6.0,
+        "max_slope": 11.31,
+        "no_room": false,
+        "min_len_stairs": 2.856,
+        "min_len_ramp": 5.495
+      }
+    },
+    {
+      "id": "bridge-brocade-craft",
+      "type": "ramp",
+      "from": "brocade-n",
+      "to": "craft-s",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          160.0,
+          248.0,
+          4.0
+        ],
+        [
+          160.0,
+          250.0,
+          4.0
+        ],
+        [
+          160.0,
+          260.0,
+          7.0
+        ],
+        [
+          160.0,
+          270.0,
+          4.0
+        ],
+        [
+          160.0,
+          272.0,
+          4.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": -3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.147,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 0.0,
+        "climb_dz_abs": 6.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "bridge-tower-counting",
+      "type": "ramp",
+      "from": "tower-n",
+      "to": "counting-s",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          420.0,
+          258.0,
+          6.0
+        ],
+        [
+          420.0,
+          260.0,
+          6.0
+        ],
+        [
+          420.0,
+          270.0,
+          7.0
+        ],
+        [
+          420.0,
+          280.0,
+          4.0
+        ],
+        [
+          420.0,
+          282.0,
+          4.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 1.0,
+          "dist3d": 10.05,
+          "slope": 5.711,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.675,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": -3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.082,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 2.0,
+        "climb_dz_abs": 4.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 2.856,
+        "min_len_ramp": 5.495
+      }
+    },
+    {
+      "id": "bridge-craft-counting",
+      "type": "ramp",
+      "from": "craft-e",
+      "to": "counting-w",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          278.0,
+          340.0,
+          4.0
+        ],
+        [
+          280.0,
+          340.0,
+          4.0
+        ],
+        [
+          300.0,
+          340.0,
+          8.0
+        ],
+        [
+          320.0,
+          340.0,
+          4.0
+        ],
+        [
+          322.0,
+          340.0,
+          4.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 20.0,
+          "dz": 4.0,
+          "dist3d": 20.396,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 3.399,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 20.0,
+          "dz": -4.0,
+          "dist3d": 20.396,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 3.399,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 7.465,
+      "climb": {
+        "horizontal": 40.0,
+        "dz": 0.0,
+        "climb_dz_abs": 8.0,
+        "max_slope": 11.31,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "bridge-craft-gardens",
+      "type": "ramp",
+      "from": "craft-n",
+      "to": "gardens-w",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          220.0,
+          398.0,
+          4.0
+        ],
+        [
+          220.0,
+          400.0,
+          4.0
+        ],
+        [
+          220.0,
+          410.0,
+          7.0
+        ],
+        [
+          220.0,
+          420.0,
+          5.0
+        ],
+        [
+          220.0,
+          422.0,
+          5.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": -2.0,
+          "dist3d": 10.198,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.7,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.106,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 1.0,
+        "climb_dz_abs": 5.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 1.428,
+        "min_len_ramp": 2.747
+      }
+    },
+    {
+      "id": "bridge-counting-gardens",
+      "type": "ramp",
+      "from": "counting-n",
+      "to": "gardens-e",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          380.0,
+          398.0,
+          4.0
+        ],
+        [
+          380.0,
+          400.0,
+          4.0
+        ],
+        [
+          380.0,
+          410.0,
+          7.0
+        ],
+        [
+          380.0,
+          420.0,
+          5.0
+        ],
+        [
+          380.0,
+          422.0,
+          5.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": -2.0,
+          "dist3d": 10.198,
+          "slope": 11.31,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.7,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 4,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 4.106,
+      "climb": {
+        "horizontal": 20.0,
+        "dz": 1.0,
+        "climb_dz_abs": 5.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 1.428,
+        "min_len_ramp": 2.747
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 33.716,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "auction",
+              "via": "街區步道 tower"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 60.77,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "tower-n",
+              "via": "街區步道 tower"
+            },
+            {
+              "from": "tower-n",
+              "to": "counting-s",
+              "via": "坡道 bridge-tower-counting"
+            },
+            {
+              "from": "counting-s",
+              "to": "bank",
+              "via": "街區步道 counting"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 57.499,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-w",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-w",
+              "to": "brocade-s",
+              "via": "坡道 bridge-quay-brocade"
+            },
+            {
+              "from": "brocade-s",
+              "to": "brocade-n",
+              "via": "街區步道 brocade"
+            },
+            {
+              "from": "brocade-n",
+              "to": "craft-s",
+              "via": "坡道 bridge-brocade-craft"
+            },
+            {
+              "from": "craft-s",
+              "to": "forge",
+              "via": "街區步道 craft"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 40.644,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "quest",
+              "via": "街區步道 tower"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 33.716,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "auction",
+              "via": "街區步道 tower"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 60.77,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "tower-n",
+              "via": "街區步道 tower"
+            },
+            {
+              "from": "tower-n",
+              "to": "counting-s",
+              "via": "坡道 bridge-tower-counting"
+            },
+            {
+              "from": "counting-s",
+              "to": "bank",
+              "via": "街區步道 counting"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 57.499,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-w",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-w",
+              "to": "brocade-s",
+              "via": "坡道 bridge-quay-brocade"
+            },
+            {
+              "from": "brocade-s",
+              "to": "brocade-n",
+              "via": "街區步道 brocade"
+            },
+            {
+              "from": "brocade-n",
+              "to": "craft-s",
+              "via": "坡道 bridge-brocade-craft"
+            },
+            {
+              "from": "craft-s",
+              "to": "forge",
+              "via": "街區步道 craft"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 40.644,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "quest",
+              "via": "街區步道 tower"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "auction": {
+          "node": "auction",
+          "time": 33.716,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "auction",
+              "via": "街區步道 tower"
+            }
+          ]
+        },
+        "bank": {
+          "node": "bank",
+          "time": 60.77,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "tower-n",
+              "via": "街區步道 tower"
+            },
+            {
+              "from": "tower-n",
+              "to": "counting-s",
+              "via": "坡道 bridge-tower-counting"
+            },
+            {
+              "from": "counting-s",
+              "to": "bank",
+              "via": "街區步道 counting"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 57.499,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-w",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-w",
+              "to": "brocade-s",
+              "via": "坡道 bridge-quay-brocade"
+            },
+            {
+              "from": "brocade-s",
+              "to": "brocade-n",
+              "via": "街區步道 brocade"
+            },
+            {
+              "from": "brocade-n",
+              "to": "craft-s",
+              "via": "坡道 bridge-brocade-craft"
+            },
+            {
+              "from": "craft-s",
+              "to": "forge",
+              "via": "街區步道 craft"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 40.644,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-e",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-e",
+              "to": "tower-s",
+              "via": "坡道 bridge-quay-tower"
+            },
+            {
+              "from": "tower-s",
+              "to": "quest",
+              "via": "街區步道 tower"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "quay",
+      "brocade",
+      "tower",
+      "counting",
+      "craft",
+      "gardens"
+    ],
+    "reps": {
+      "quay": "arrival",
+      "brocade": "brocade-n",
+      "tower": "auction",
+      "counting": "bank",
+      "craft": "forge",
+      "gardens": "gardens-w"
+    },
+    "times": [
+      [
+        0.0,
+        43.686,
+        33.716,
+        60.77,
+        57.499,
+        75.199
+      ],
+      [
+        43.686,
+        0.0,
+        46.448,
+        53.977,
+        13.813,
+        31.513
+      ],
+      [
+        33.716,
+        46.448,
+        0.0,
+        27.307,
+        60.261,
+        61.304
+      ],
+      [
+        60.77,
+        53.977,
+        27.307,
+        0.0,
+        46.869,
+        44.681
+      ],
+      [
+        57.499,
+        13.813,
+        60.261,
+        46.869,
+        0.0,
+        19.221
+      ],
+      [
+        75.199,
+        31.513,
+        61.304,
+        44.681,
+        19.221,
+        0.0
+      ]
+    ],
+    "max": 75.199,
+    "max_pair": [
+      "quay",
+      "gardens"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 bank（全部路線）：60.8 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 bank（不走繩橋）：60.8 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "arrival": {
+      "id": "arrival",
+      "zone": "quay",
+      "x": 300.0,
+      "y": 50.0,
+      "z": 3.0,
+      "label": "碼頭傳送點（新手起點）"
+    },
+    "quay-w": {
+      "id": "quay-w",
+      "zone": "quay",
+      "x": 220.0,
+      "y": 88.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "quay-e": {
+      "id": "quay-e",
+      "zone": "quay",
+      "x": 400.0,
+      "y": 88.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "brocade-s": {
+      "id": "brocade-s",
+      "zone": "brocade",
+      "x": 220.0,
+      "y": 112.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "brocade-e": {
+      "id": "brocade-e",
+      "zone": "brocade",
+      "x": 278.0,
+      "y": 180.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "brocade-n": {
+      "id": "brocade-n",
+      "zone": "brocade",
+      "x": 160.0,
+      "y": 248.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "tower-s": {
+      "id": "tower-s",
+      "zone": "tower",
+      "x": 400.0,
+      "y": 112.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "tower-w": {
+      "id": "tower-w",
+      "zone": "tower",
+      "x": 322.0,
+      "y": 180.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "auction": {
+      "id": "auction",
+      "zone": "tower",
+      "x": 420.0,
+      "y": 180.0,
+      "z": 6.0,
+      "label": "九海聚寶樓拍賣廳（拍賣行）"
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "tower",
+      "x": 470.0,
+      "y": 200.0,
+      "z": 6.0,
+      "label": "商盟議事堂（主線任務）"
+    },
+    "tower-n": {
+      "id": "tower-n",
+      "zone": "tower",
+      "x": 420.0,
+      "y": 258.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "craft-s": {
+      "id": "craft-s",
+      "zone": "craft",
+      "x": 160.0,
+      "y": 272.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "craft",
+      "x": 160.0,
+      "y": 330.0,
+      "z": 4.0,
+      "label": "兵器坊（The Forge）"
+    },
+    "craft-e": {
+      "id": "craft-e",
+      "zone": "craft",
+      "x": 278.0,
+      "y": 340.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "craft-n": {
+      "id": "craft-n",
+      "zone": "craft",
+      "x": 220.0,
+      "y": 398.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "counting-s": {
+      "id": "counting-s",
+      "zone": "counting",
+      "x": 420.0,
+      "y": 282.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "counting-w": {
+      "id": "counting-w",
+      "zone": "counting",
+      "x": 322.0,
+      "y": 340.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "counting",
+      "x": 440.0,
+      "y": 340.0,
+      "z": 4.0,
+      "label": "九方錢莊總號（銀行）"
+    },
+    "counting-n": {
+      "id": "counting-n",
+      "zone": "counting",
+      "x": 380.0,
+      "y": 398.0,
+      "z": 4.0,
+      "label": ""
+    },
+    "gardens-w": {
+      "id": "gardens-w",
+      "zone": "gardens",
+      "x": 220.0,
+      "y": 422.0,
+      "z": 5.0,
+      "label": ""
+    },
+    "gardens-e": {
+      "id": "gardens-e",
+      "zone": "gardens",
+      "x": 380.0,
+      "y": 422.0,
+      "z": 5.0,
+      "label": ""
+    }
+  }
+}

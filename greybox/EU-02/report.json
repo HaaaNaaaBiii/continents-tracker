@@ -1,0 +1,946 @@
+{
+  "id": "EU-02",
+  "name": "霧環堡",
+  "name_en": "Nebelburg",
+  "version": "0.3",
+  "verdict": "PASS",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "causeway-ramp",
+      "type": "ramp",
+      "from": "causeway-n",
+      "to": "lower-s",
+      "width": 10.0,
+      "optional": false,
+      "points": [
+        [
+          300.0,
+          100.0,
+          2.0
+        ],
+        [
+          300.0,
+          105.0,
+          2.0
+        ],
+        [
+          300.0,
+          120.0,
+          6.0
+        ],
+        [
+          300.0,
+          135.0,
+          6.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 15.0,
+          "dz": 4.0,
+          "dist3d": 15.524,
+          "slope": 14.931,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 2.587,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 15.0,
+          "dz": 0.0,
+          "dist3d": 15.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 2.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 5.921,
+      "climb": {
+        "horizontal": 15.0,
+        "dz": 4.0,
+        "climb_dz_abs": 4.0,
+        "max_slope": 14.931,
+        "no_room": false,
+        "min_len_stairs": 5.713,
+        "min_len_ramp": 10.99
+      }
+    },
+    {
+      "id": "college-ramp",
+      "type": "ramp",
+      "from": "lower-w",
+      "to": "college-s",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          150.0,
+          200.0,
+          6.0
+        ],
+        [
+          150.0,
+          220.0,
+          6.0
+        ],
+        [
+          150.0,
+          245.0,
+          14.0
+        ],
+        [
+          150.0,
+          247.0,
+          14.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 20.0,
+          "dz": 0.0,
+          "dist3d": 20.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 3.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 25.0,
+          "dz": 8.0,
+          "dist3d": 26.249,
+          "slope": 17.745,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 4.375,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 8.041,
+      "climb": {
+        "horizontal": 25.0,
+        "dz": 8.0,
+        "climb_dz_abs": 8.0,
+        "max_slope": 17.745,
+        "no_room": false,
+        "min_len_stairs": 11.425,
+        "min_len_ramp": 21.98
+      }
+    },
+    {
+      "id": "ring-stair",
+      "type": "stairs",
+      "from": "lower-n",
+      "to": "ring-s",
+      "width": 12.0,
+      "optional": false,
+      "points": [
+        [
+          350.0,
+          218.0,
+          6.0
+        ],
+        [
+          350.0,
+          220.0,
+          6.0
+        ],
+        [
+          350.0,
+          250.0,
+          22.0
+        ],
+        [
+          350.0,
+          255.0,
+          22.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 30.0,
+          "dz": 16.0,
+          "dist3d": 34.0,
+          "slope": 28.072,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 6.517,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 7.683,
+      "climb": {
+        "horizontal": 30.0,
+        "dz": 16.0,
+        "climb_dz_abs": 16.0,
+        "max_slope": 28.072,
+        "no_room": false,
+        "min_len_stairs": 22.85,
+        "min_len_ramp": 43.96
+      }
+    },
+    {
+      "id": "college-to-ring",
+      "type": "stairs",
+      "from": "college-e",
+      "to": "ring-w",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          240.0,
+          300.0,
+          14.0
+        ],
+        [
+          245.0,
+          300.0,
+          14.0
+        ],
+        [
+          260.0,
+          300.0,
+          22.0
+        ],
+        [
+          270.0,
+          300.0,
+          22.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 15.0,
+          "dz": 8.0,
+          "dist3d": 17.0,
+          "slope": 28.072,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 3.258,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 10.0,
+          "dz": 0.0,
+          "dist3d": 10.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 1.667,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 5.758,
+      "climb": {
+        "horizontal": 15.0,
+        "dz": 8.0,
+        "climb_dz_abs": 8.0,
+        "max_slope": 28.072,
+        "no_room": false,
+        "min_len_stairs": 11.425,
+        "min_len_ramp": 21.98
+      }
+    },
+    {
+      "id": "ring-to-cloister",
+      "type": "walk",
+      "from": "ring-e",
+      "to": "cloister-w",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          438.0,
+          300.0,
+          22.0
+        ],
+        [
+          440.0,
+          300.0,
+          22.0
+        ],
+        [
+          442.0,
+          300.0,
+          22.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 0.667,
+      "climb": {
+        "horizontal": 0,
+        "dz": 0.0,
+        "climb_dz_abs": 0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    },
+    {
+      "id": "spire-stair",
+      "type": "stairs",
+      "from": "ring-n",
+      "to": "spire-s",
+      "width": 10.0,
+      "optional": false,
+      "points": [
+        [
+          360.0,
+          358.0,
+          22.0
+        ],
+        [
+          360.0,
+          360.0,
+          22.0
+        ],
+        [
+          360.0,
+          390.0,
+          40.0
+        ],
+        [
+          360.0,
+          395.0,
+          40.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 30.0,
+          "dz": 18.0,
+          "dist3d": 34.986,
+          "slope": 30.964,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 6.706,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 7.872,
+      "climb": {
+        "horizontal": 30.0,
+        "dz": 18.0,
+        "climb_dz_abs": 18.0,
+        "max_slope": 30.964,
+        "no_room": false,
+        "min_len_stairs": 25.707,
+        "min_len_ramp": 49.455
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 20.0,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 lowertown"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 42.526,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-w",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-w",
+              "to": "college-s",
+              "via": "坡道 college-ramp"
+            },
+            {
+              "from": "college-s",
+              "to": "forge",
+              "via": "街區步道 college"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 51.855,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-n",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-n",
+              "to": "ring-s",
+              "via": "樓梯 ring-stair"
+            },
+            {
+              "from": "ring-s",
+              "to": "ring-n",
+              "via": "街區步道 ring"
+            },
+            {
+              "from": "ring-n",
+              "to": "spire-s",
+              "via": "樓梯 spire-stair"
+            },
+            {
+              "from": "spire-s",
+              "to": "quest",
+              "via": "街區步道 spire"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 20.0,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 lowertown"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 42.526,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-w",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-w",
+              "to": "college-s",
+              "via": "坡道 college-ramp"
+            },
+            {
+              "from": "college-s",
+              "to": "forge",
+              "via": "街區步道 college"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 51.855,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-n",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-n",
+              "to": "ring-s",
+              "via": "樓梯 ring-stair"
+            },
+            {
+              "from": "ring-s",
+              "to": "ring-n",
+              "via": "街區步道 ring"
+            },
+            {
+              "from": "ring-n",
+              "to": "spire-s",
+              "via": "樓梯 spire-stair"
+            },
+            {
+              "from": "spire-s",
+              "to": "quest",
+              "via": "街區步道 spire"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 20.0,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "bank",
+              "via": "街區步道 lowertown"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 42.526,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-w",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-w",
+              "to": "college-s",
+              "via": "坡道 college-ramp"
+            },
+            {
+              "from": "college-s",
+              "to": "forge",
+              "via": "街區步道 college"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 51.855,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "lower-n",
+              "via": "街區步道 lowertown"
+            },
+            {
+              "from": "lower-n",
+              "to": "ring-s",
+              "via": "樓梯 ring-stair"
+            },
+            {
+              "from": "ring-s",
+              "to": "ring-n",
+              "via": "街區步道 ring"
+            },
+            {
+              "from": "ring-n",
+              "to": "spire-s",
+              "via": "樓梯 spire-stair"
+            },
+            {
+              "from": "spire-s",
+              "to": "quest",
+              "via": "街區步道 spire"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "causeway",
+      "lowertown",
+      "college",
+      "ring",
+      "cloister",
+      "spire"
+    ],
+    "reps": {
+      "causeway": "newbie-start",
+      "lowertown": "arrival",
+      "college": "forge",
+      "ring": "astrolabe",
+      "cloister": "cloister-w",
+      "spire": "quest"
+    },
+    "times": [
+      [
+        0.0,
+        23.421,
+        61.864,
+        48.92,
+        58.56,
+        74.04
+      ],
+      [
+        23.421,
+        0.0,
+        42.526,
+        26.735,
+        36.375,
+        51.855
+      ],
+      [
+        61.864,
+        42.526,
+        0.0,
+        35.758,
+        51.092,
+        55.642
+      ],
+      [
+        48.92,
+        26.735,
+        35.758,
+        0.0,
+        15.333,
+        25.182
+      ],
+      [
+        58.56,
+        36.375,
+        51.092,
+        15.333,
+        0.0,
+        32.239
+      ],
+      [
+        74.04,
+        51.855,
+        55.642,
+        25.182,
+        32.239,
+        0.0
+      ]
+    ],
+    "max": 74.04,
+    "max_pair": [
+      "causeway",
+      "spire"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [],
+  "nodes": {
+    "newbie-start": {
+      "id": "newbie-start",
+      "zone": "causeway",
+      "x": 300.0,
+      "y": 30.0,
+      "z": 2.0,
+      "label": "沼澤堤道（新手起點）"
+    },
+    "causeway-n": {
+      "id": "causeway-n",
+      "zone": "causeway",
+      "x": 300.0,
+      "y": 100.0,
+      "z": 2.0,
+      "label": ""
+    },
+    "lower-s": {
+      "id": "lower-s",
+      "zone": "lowertown",
+      "x": 300.0,
+      "y": 135.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "lowertown",
+      "x": 420.0,
+      "y": 170.0,
+      "z": 6.0,
+      "label": "修會金庫（銀行）"
+    },
+    "lower-w": {
+      "id": "lower-w",
+      "zone": "lowertown",
+      "x": 150.0,
+      "y": 200.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "lower-n": {
+      "id": "lower-n",
+      "zone": "lowertown",
+      "x": 350.0,
+      "y": 218.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "college-s": {
+      "id": "college-s",
+      "zone": "college",
+      "x": 150.0,
+      "y": 247.0,
+      "z": 14.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "college",
+      "x": 140.0,
+      "y": 300.0,
+      "z": 14.0,
+      "label": "星盤鍛造室（The Forge）"
+    },
+    "college-e": {
+      "id": "college-e",
+      "zone": "college",
+      "x": 240.0,
+      "y": 300.0,
+      "z": 14.0,
+      "label": ""
+    },
+    "ring-w": {
+      "id": "ring-w",
+      "zone": "ring",
+      "x": 270.0,
+      "y": 300.0,
+      "z": 22.0,
+      "label": ""
+    },
+    "ring-s": {
+      "id": "ring-s",
+      "zone": "ring",
+      "x": 350.0,
+      "y": 255.0,
+      "z": 22.0,
+      "label": ""
+    },
+    "astrolabe": {
+      "id": "astrolabe",
+      "zone": "ring",
+      "x": 350.0,
+      "y": 300.0,
+      "z": 22.0,
+      "label": "巨型星盤"
+    },
+    "ring-e": {
+      "id": "ring-e",
+      "zone": "ring",
+      "x": 438.0,
+      "y": 300.0,
+      "z": 22.0,
+      "label": ""
+    },
+    "ring-n": {
+      "id": "ring-n",
+      "zone": "ring",
+      "x": 360.0,
+      "y": 358.0,
+      "z": 22.0,
+      "label": ""
+    },
+    "cloister-w": {
+      "id": "cloister-w",
+      "zone": "cloister",
+      "x": 442.0,
+      "y": 300.0,
+      "z": 22.0,
+      "label": ""
+    },
+    "spire-s": {
+      "id": "spire-s",
+      "zone": "spire",
+      "x": 360.0,
+      "y": 395.0,
+      "z": 40.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "spire",
+      "x": 360.0,
+      "y": 440.0,
+      "z": 40.0,
+      "label": "天穹星軌聖塔（主線任務）"
+    },
+    "arrival": {
+      "id": "arrival",
+      "zone": "lowertown",
+      "x": 300.0,
+      "y": 170.0,
+      "z": 6.0,
+      "label": "下城傳送點（城市主傳送點）"
+    }
+  }
+}

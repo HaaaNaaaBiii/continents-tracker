@@ -1,0 +1,936 @@
+{
+  "id": "EU-03",
+  "name": "霜灣港",
+  "name_en": "Frostfjord Port",
+  "version": "0.2",
+  "verdict": "PASS（有標註）",
+  "constants": {
+    "RUN_SPEED": 6.0,
+    "STAIR_FACTOR": 1.15,
+    "LIFT_SPEED": 3.0,
+    "LIFT_WAIT": 6.0,
+    "FLAT_MAX": 8.0,
+    "RAMP_REC_MAX": 20.0,
+    "RAMP_NOTE_MAX": 30.0,
+    "STAIR_MIN": 25.0,
+    "STAIR_MAX": 35.0,
+    "HARD_MAX": 40.0,
+    "STEP_MAX": 0.45,
+    "STEP_BUILD": 0.18,
+    "CORE_TARGET": 60.0,
+    "CORE_LIMIT": 90.0,
+    "ZONE_TARGET": 120.0,
+    "ZONE_LIMIT": 150.0,
+    "WALKONLY_LIMIT": 150.0
+  },
+  "validation": {
+    "orphans": [],
+    "issues": []
+  },
+  "links": [
+    {
+      "id": "quay-to-breakwater",
+      "type": "ramp",
+      "from": "quay-s",
+      "to": "breakwater-w",
+      "width": 5.0,
+      "optional": false,
+      "points": [
+        [
+          180.0,
+          47.0,
+          3.0
+        ],
+        [
+          180.0,
+          45.0,
+          3.0
+        ],
+        [
+          180.0,
+          35.0,
+          6.0
+        ],
+        [
+          180.0,
+          30.0,
+          6.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 10.0,
+          "dz": 3.0,
+          "dist3d": 10.44,
+          "slope": 16.699,
+          "kind": "ramp",
+          "region": "climb",
+          "time": 1.74,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 5.0,
+          "dz": 0.0,
+          "dist3d": 5.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.833,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 2.907,
+      "climb": {
+        "horizontal": 10.0,
+        "dz": 3.0,
+        "climb_dz_abs": 3.0,
+        "max_slope": 16.699,
+        "no_room": false,
+        "min_len_stairs": 4.284,
+        "min_len_ramp": 8.242
+      }
+    },
+    {
+      "id": "quay-stair",
+      "type": "stairs",
+      "from": "quay-n",
+      "to": "harbor-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          120.0,
+          123.0,
+          3.0
+        ],
+        [
+          120.0,
+          125.0,
+          3.0
+        ],
+        [
+          120.0,
+          150.0,
+          18.0
+        ],
+        [
+          120.0,
+          165.0,
+          18.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 25.0,
+          "dz": 15.0,
+          "dist3d": 29.155,
+          "slope": 30.964,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 5.588,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 15.0,
+          "dz": 0.0,
+          "dist3d": 15.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 2.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 8.421,
+      "climb": {
+        "horizontal": 25.0,
+        "dz": 15.0,
+        "climb_dz_abs": 15.0,
+        "max_slope": 30.964,
+        "no_room": false,
+        "min_len_stairs": 21.422,
+        "min_len_ramp": 41.212
+      }
+    },
+    {
+      "id": "smithy-stair",
+      "type": "stairs",
+      "from": "harbor-n",
+      "to": "smithies-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          100.0,
+          248.0,
+          18.0
+        ],
+        [
+          100.0,
+          250.0,
+          18.0
+        ],
+        [
+          100.0,
+          275.0,
+          34.0
+        ],
+        [
+          100.0,
+          278.0,
+          34.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 25.0,
+          "dz": 16.0,
+          "dist3d": 29.682,
+          "slope": 32.619,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 5.689,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 6.522,
+      "climb": {
+        "horizontal": 25.0,
+        "dz": 16.0,
+        "climb_dz_abs": 16.0,
+        "max_slope": 32.619,
+        "no_room": false,
+        "min_len_stairs": 22.85,
+        "min_len_ramp": 43.96
+      }
+    },
+    {
+      "id": "longhouse-stair",
+      "type": "stairs",
+      "from": "smithies-n",
+      "to": "longhouse-s",
+      "width": 8.0,
+      "optional": false,
+      "points": [
+        [
+          100.0,
+          352.0,
+          34.0
+        ],
+        [
+          100.0,
+          355.0,
+          34.0
+        ],
+        [
+          100.0,
+          380.0,
+          50.0
+        ],
+        [
+          100.0,
+          383.0,
+          50.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 25.0,
+          "dz": 16.0,
+          "dist3d": 29.682,
+          "slope": 32.619,
+          "kind": "stairs",
+          "region": "climb",
+          "time": 5.689,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 3.0,
+          "dz": 0.0,
+          "dist3d": 3.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.5,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 6.689,
+      "climb": {
+        "horizontal": 25.0,
+        "dz": 16.0,
+        "climb_dz_abs": 16.0,
+        "max_slope": 32.619,
+        "no_room": false,
+        "min_len_stairs": 22.85,
+        "min_len_ramp": 43.96
+      }
+    },
+    {
+      "id": "fjord-bridge",
+      "type": "walk",
+      "from": "harbor-e",
+      "to": "enclave-w",
+      "width": 6.0,
+      "optional": false,
+      "points": [
+        [
+          208.0,
+          200.0,
+          18.0
+        ],
+        [
+          210.0,
+          200.0,
+          18.0
+        ],
+        [
+          300.0,
+          200.0,
+          18.0
+        ],
+        [
+          302.0,
+          200.0,
+          18.0
+        ]
+      ],
+      "segments": [
+        {
+          "index": 1,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "start",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        },
+        {
+          "index": 2,
+          "horizontal": 90.0,
+          "dz": 0.0,
+          "dist3d": 90.0,
+          "slope": 0.0,
+          "kind": "walk",
+          "region": "climb",
+          "time": 15.0,
+          "verdict": "✅",
+          "note": "",
+          "no_room": false
+        },
+        {
+          "index": 3,
+          "horizontal": 2.0,
+          "dz": 0.0,
+          "dist3d": 2.0,
+          "slope": 0.0,
+          "kind": "platform",
+          "region": "end",
+          "time": 0.333,
+          "verdict": "✅",
+          "note": "平台（zone 內）",
+          "no_room": false
+        }
+      ],
+      "time": 15.667,
+      "climb": {
+        "horizontal": 90.0,
+        "dz": 0.0,
+        "climb_dz_abs": 0.0,
+        "max_slope": 0.0,
+        "no_room": false,
+        "min_len_stairs": 0.0,
+        "min_len_ramp": 0.0
+      }
+    }
+  ],
+  "scenarios": {
+    "all": {
+      "title": "全部路線",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 62.658,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-e",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-e",
+              "to": "enclave-w",
+              "via": "步道 fjord-bridge"
+            },
+            {
+              "from": "enclave-w",
+              "to": "bank",
+              "via": "街區步道 enclave"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 41.992,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-n",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-n",
+              "to": "smithies-s",
+              "via": "樓梯 smithy-stair"
+            },
+            {
+              "from": "smithies-s",
+              "to": "forge",
+              "via": "街區步道 smithies"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 20.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "quest",
+              "via": "街區步道 harborward"
+            }
+          ]
+        }
+      }
+    },
+    "no_bridge": {
+      "title": "不走繩橋",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 62.658,
+          "verdict": "⚠️",
+          "note": "> 60s 目標",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-e",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-e",
+              "to": "enclave-w",
+              "via": "步道 fjord-bridge"
+            },
+            {
+              "from": "enclave-w",
+              "to": "bank",
+              "via": "街區步道 enclave"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 41.992,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-n",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-n",
+              "to": "smithies-s",
+              "via": "樓梯 smithy-stair"
+            },
+            {
+              "from": "smithies-s",
+              "to": "forge",
+              "via": "街區步道 smithies"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 20.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "quest",
+              "via": "街區步道 harborward"
+            }
+          ]
+        }
+      }
+    },
+    "walk_only": {
+      "title": "只走路（不搭升降台、不走繩橋）",
+      "services": {
+        "bank": {
+          "node": "bank",
+          "time": 62.658,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-e",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-e",
+              "to": "enclave-w",
+              "via": "步道 fjord-bridge"
+            },
+            {
+              "from": "enclave-w",
+              "to": "bank",
+              "via": "街區步道 enclave"
+            }
+          ]
+        },
+        "forge": {
+          "node": "forge",
+          "time": 41.992,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "harbor-n",
+              "via": "街區步道 harborward"
+            },
+            {
+              "from": "harbor-n",
+              "to": "smithies-s",
+              "via": "樓梯 smithy-stair"
+            },
+            {
+              "from": "smithies-s",
+              "to": "forge",
+              "via": "街區步道 smithies"
+            }
+          ]
+        },
+        "quest": {
+          "node": "quest",
+          "time": 20.686,
+          "verdict": "✅",
+          "note": "",
+          "route": [
+            {
+              "from": "arrival",
+              "to": "quay-n",
+              "via": "街區步道 quay"
+            },
+            {
+              "from": "quay-n",
+              "to": "harbor-s",
+              "via": "樓梯 quay-stair"
+            },
+            {
+              "from": "harbor-s",
+              "to": "quest",
+              "via": "街區步道 harborward"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matrix": {
+    "zones": [
+      "quay",
+      "breakwater",
+      "harborward",
+      "smithies",
+      "enclave",
+      "longhouse"
+    ],
+    "reps": {
+      "quay": "arrival",
+      "breakwater": "breakwater-w",
+      "harborward": "quest",
+      "smithies": "forge",
+      "enclave": "bank",
+      "longhouse": "longhouse"
+    },
+    "times": [
+      [
+        0.0,
+        12.695,
+        20.686,
+        41.992,
+        62.658,
+        60.916
+      ],
+      [
+        12.695,
+        0.0,
+        33.3,
+        54.606,
+        75.272,
+        73.53
+      ],
+      [
+        20.686,
+        33.3,
+        0.0,
+        21.577,
+        46.688,
+        40.501
+      ],
+      [
+        41.992,
+        54.606,
+        21.577,
+        0.0,
+        64.629,
+        19.366
+      ],
+      [
+        62.658,
+        75.272,
+        46.688,
+        64.629,
+        0.0,
+        83.553
+      ],
+      [
+        60.916,
+        73.53,
+        40.501,
+        19.366,
+        83.553,
+        0.0
+      ]
+    ],
+    "max": 83.553,
+    "max_pair": [
+      "enclave",
+      "longhouse"
+    ],
+    "over_limit": false,
+    "over_target": false
+  },
+  "flagged": [
+    {
+      "level": "⚠️",
+      "text": "核心服務 bank（全部路線）：62.7 s — > 60s 目標"
+    },
+    {
+      "level": "⚠️",
+      "text": "核心服務 bank（不走繩橋）：62.7 s — > 60s 目標"
+    }
+  ],
+  "nodes": {
+    "arrival": {
+      "id": "arrival",
+      "zone": "quay",
+      "x": 140.0,
+      "y": 90.0,
+      "z": 3.0,
+      "label": "碼頭傳送點"
+    },
+    "quay-s": {
+      "id": "quay-s",
+      "zone": "quay",
+      "x": 180.0,
+      "y": 47.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "quay-n": {
+      "id": "quay-n",
+      "zone": "quay",
+      "x": 120.0,
+      "y": 123.0,
+      "z": 3.0,
+      "label": ""
+    },
+    "lighthouse": {
+      "id": "lighthouse",
+      "zone": "breakwater",
+      "x": 280.0,
+      "y": 20.0,
+      "z": 6.0,
+      "label": "晨星號紀念燈塔"
+    },
+    "breakwater-w": {
+      "id": "breakwater-w",
+      "zone": "breakwater",
+      "x": 180.0,
+      "y": 30.0,
+      "z": 6.0,
+      "label": ""
+    },
+    "harbor-s": {
+      "id": "harbor-s",
+      "zone": "harborward",
+      "x": 120.0,
+      "y": 165.0,
+      "z": 18.0,
+      "label": ""
+    },
+    "quest": {
+      "id": "quest",
+      "zone": "harborward",
+      "x": 120.0,
+      "y": 200.0,
+      "z": 18.0,
+      "label": "港務署（主線任務）"
+    },
+    "harbor-e": {
+      "id": "harbor-e",
+      "zone": "harborward",
+      "x": 208.0,
+      "y": 200.0,
+      "z": 18.0,
+      "label": ""
+    },
+    "harbor-n": {
+      "id": "harbor-n",
+      "zone": "harborward",
+      "x": 100.0,
+      "y": 248.0,
+      "z": 18.0,
+      "label": ""
+    },
+    "smithies-s": {
+      "id": "smithies-s",
+      "zone": "smithies",
+      "x": 100.0,
+      "y": 278.0,
+      "z": 34.0,
+      "label": ""
+    },
+    "forge": {
+      "id": "forge",
+      "zone": "smithies",
+      "x": 110.0,
+      "y": 315.0,
+      "z": 34.0,
+      "label": "冰崖工坊（The Forge）"
+    },
+    "smithies-n": {
+      "id": "smithies-n",
+      "zone": "smithies",
+      "x": 100.0,
+      "y": 352.0,
+      "z": 34.0,
+      "label": ""
+    },
+    "longhouse-s": {
+      "id": "longhouse-s",
+      "zone": "longhouse",
+      "x": 100.0,
+      "y": 383.0,
+      "z": 50.0,
+      "label": ""
+    },
+    "longhouse": {
+      "id": "longhouse",
+      "zone": "longhouse",
+      "x": 120.0,
+      "y": 415.0,
+      "z": 50.0,
+      "label": "長屋議事廳"
+    },
+    "enclave-w": {
+      "id": "enclave-w",
+      "zone": "enclave",
+      "x": 302.0,
+      "y": 200.0,
+      "z": 18.0,
+      "label": ""
+    },
+    "bank": {
+      "id": "bank",
+      "zone": "enclave",
+      "x": 400.0,
+      "y": 205.0,
+      "z": 18.0,
+      "label": "千帆商館（銀行）"
+    }
+  }
+}
